@@ -255,8 +255,8 @@
                 <!-- Element to contain animated typing -->
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn" onclick="window.location.href='Sankalp_Resume.pdf';" download="Sankalp_Resume.pdf">Download Resume</button>
-                    <button class="btn">Visit Github</button>
+                    <button class="btn" onclick="downloadResume()">Download Resume</button>
+                    <button class="btn" onclick="openGithubLink()">Visit Github</button>
                 </div>
             </div>
             <div class="rightSection">
@@ -330,6 +330,18 @@
             strings: ['Web Developer', 'Software Engineer', 'ML Enthusiast'],
             typeSpeed: 50,
         });
+
+        function downloadResume() {
+            // Redirect to the GitHub link
+            window.location.href='Sankalp_Resume.pdf';
+        }
+        
+        // Alternatively, you can use an event listener for better separation of concerns
+        function openGithubLink() {
+            // Open the GitHub link in a new tab
+            window.open("https://github.com/SankalpSTiwari");
+        }
+
     </script>
 </body>
 
