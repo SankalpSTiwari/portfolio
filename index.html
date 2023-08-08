@@ -165,6 +165,7 @@
 
         .footer ul {
             list-style: none;
+            cursor: pointer;
         }
 
         .footer div {
@@ -311,10 +312,10 @@
             </div>
             <div class="footer-third">
                 <ul>
-                    <li>LinkedIn</li>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Snapchat</li>
+                    <li id="linkedin">LinkedIn</li>
+                    <li id="facebook">Facebook</li>
+                    <li id="instagram">Instagram</li>
+                    <li id="snapchat">Snapchat</li>
                 </ul>
             </div>
         </div>
@@ -342,6 +343,23 @@
             window.open("https://github.com/SankalpSTiwari");
         }
 
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("linkedin").addEventListener("click", function() {
+                window.open("https://www.linkedin.com/in/tsankalp/");
+            });
+    
+            document.getElementById("facebook").addEventListener("click", function() {
+                window.open("https://www.facebook.com/sankalp.tiwari.7583");
+            });
+    
+            document.getElementById("instagram").addEventListener("click", function() {
+                window.open("https://www.instagram.com/sankalp__tiwari/");
+            });
+    
+            document.getElementById("snapchat").addEventListener("click", function() {
+                window.open("https://t.snapchat.com/fX8jAcPB");
+            });
+        });
     </script>
 </body>
 
