@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/SankalpSTiwari/portfolio/static/css/main.796d0ebe.css",
+    "main.js": "/SankalpSTiwari/portfolio/static/js/main.dee06210.js",
+    "index.html": "/SankalpSTiwari/portfolio/index.html",
+    "main.796d0ebe.css.map": "/SankalpSTiwari/portfolio/static/css/main.796d0ebe.css.map",
+    "main.dee06210.js.map": "/SankalpSTiwari/portfolio/static/js/main.dee06210.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.796d0ebe.css",
+    "static/js/main.dee06210.js"
+  ]
+}
