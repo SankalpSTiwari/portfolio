@@ -1,6 +1,6 @@
 import React from 'react';
 import TypewriterComponent from 'typewriter-effect';
-
+import IMAGES from '../images';
 import './../styles.css'; // Import your styles
 
 const FirstSection = () => {
@@ -48,7 +48,7 @@ const FirstSection = () => {
         </div>
       </div>
       <div className='rightSection'>
-        <img src='/bg.png' alt='Background' />
+        <img src={IMAGES.bg} alt='Background' />
       </div>
     </section>
   );
