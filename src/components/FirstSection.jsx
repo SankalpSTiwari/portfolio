@@ -1,14 +1,11 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import TypewriterComponent from 'typewriter-effect';
-
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 import './../styles.css'; // Import your styles
 
 const FirstSection = () => {
   const downloadResume = () => {
     // Implement the download resume logic
-    // For example, redirect to the resume file
     window.location.href = 'Sankalp_Resume.pdf';
   };
 
@@ -51,7 +48,7 @@ const FirstSection = () => {
         </div>
       </div>
       <div className='rightSection'>
-        <img src='bg.png' alt='Background' />
+        <img src='/bg.png' alt='Background' />
       </div>
     </section>
   );
