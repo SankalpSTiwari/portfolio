@@ -1,62 +1,39 @@
 import React from 'react';
 import './../styles.css'; // Import your styles
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 const Header = () => {
   return (
-    <header>
-      <nav>
-        <div className='left'>Sankalp's Portfolio</div>
-        <div className='right'>
-          <ul>
-            <li>
-              <a
-                href='https://sankalpstiwari.github.io/portfolio/'
-                target='_blank'
-                rel='noopener noreferrer' // Adding rel attribute for security
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://www.linkedin.com/in/tsankalp/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://www.linkedin.com/in/tsankalp/'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href='https://github.com/SankalpSTiwari'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Projects
-              </a>
-            </li>
-            <li>
-              <a
-                href='pdf_qrcode.pdf'
-                target='_blank'
-                rel='noopener noreferrer'
-              >
-                Contact me
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <Navbar expand='lg' className='bg-body-tertiary'>
+      <Container>
+        <Navbar.Brand style={{ cursor: 'default' }}>
+          Sankalp's Portfolio
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls='basic-navbar-nav' />
+        <Navbar.Collapse id='basic-navbar-nav'>
+          <Nav className='me-auto'>
+            <Nav.Link href='#home'>Home</Nav.Link>
+            <Nav.Link href='#experience'>About</Nav.Link>
+            <Nav.Link href='#skills'>Skills</Nav.Link>
+            <Nav.Link href='#projects'>Projects</Nav.Link>
+            <Nav.Link href='#contact'>Contact Me</Nav.Link>
+            {/* <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
+              <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
+              <NavDropdown.Item href='#action/3.2'>
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href='#action/3.3'>Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href='#action/3.4'>
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown> */}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

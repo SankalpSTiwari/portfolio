@@ -1,102 +1,123 @@
 import React from 'react';
-import './../styles.css'; // Import your styles
+
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Footer = () => {
-  const handleItemClick = (url, target) => {
-    window.open(url, target);
-  };
-
   return (
-    <footer>
-      <div className='footer'>
-        <div className='footer-first'>
-          <h3>Sankalp's Developer Portfolio</h3>
-        </div>
-        <div className='footer-second'>
-          <ul>
-            <li id='home' onClick={() => handleItemClick('#', '_self')}>
-              Home
+    <Container
+      fluid
+      className='bg-body-secondary'
+      id='contact'
+      style={{ marginTop: '5vh' }}
+    >
+      <Row
+        style={{ paddingTop: '1.5vh' }}
+        className='d-flex align-items-center'
+      >
+        <Col style={{ fontSize: '1.75vw' }}>Sankalp's Developer Portfolio</Col>
+        <Col>
+          <ul style={{ listStyle: 'none', padding: 0 }}>
+            <li>
+              <a
+                className='text-decoration-none'
+                style={{ cursor: 'pointer', color: 'inherit' }}
+                href='#'
+              >
+                Home
+              </a>
             </li>
-            <li
-              id='about'
-              onClick={() =>
-                handleItemClick(
-                  'https://www.linkedin.com/in/tsankalp/',
-                  '_blank'
-                )
-              }
-            >
-              About
+            <li>
+              <a
+                className='text-decoration-none'
+                style={{ cursor: 'pointer', color: 'inherit' }}
+                href='https://www.linkedin.com/in/tsankalp/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                About
+              </a>
             </li>
-            <li
-              id='services'
-              onClick={() =>
-                handleItemClick(
-                  'https://www.linkedin.com/in/tsankalp/',
-                  '_blank'
-                )
-              }
-            >
-              Services
+            <li>
+              <a
+                className='text-decoration-none'
+                style={{ cursor: 'pointer', color: 'inherit' }}
+                href='https://www.linkedin.com/in/tsankalp/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Services
+              </a>
             </li>
-            <li
-              id='contact'
-              onClick={() => handleItemClick('pdf_qrcode.pdf', '_blank')}
-            >
-              Contact
-            </li>
-          </ul>
-        </div>
-        <div className='footer-third'>
-          <ul>
-            <li
-              id='linkedin'
-              onClick={() =>
-                handleItemClick(
-                  'https://www.linkedin.com/in/tsankalp/',
-                  '_blank'
-                )
-              }
-            >
-              LinkedIn
-            </li>
-            <li
-              id='facebook'
-              onClick={() =>
-                handleItemClick(
-                  'https://www.facebook.com/sankalp.tiwari.7583',
-                  '_blank'
-                )
-              }
-            >
-              Facebook
-            </li>
-            <li
-              id='instagram'
-              onClick={() =>
-                handleItemClick(
-                  'https://www.instagram.com/sankalp__tiwari/',
-                  '_blank'
-                )
-              }
-            >
-              Instagram
-            </li>
-            <li
-              id='snapchat'
-              onClick={() =>
-                handleItemClick('https://t.snapchat.com/fX8jAcPB', '_blank')
-              }
-            >
-              Snapchat
+            <li>
+              <a
+                className='text-decoration-none'
+                style={{ cursor: 'pointer', color: 'inherit' }}
+                href='pdf_qrcode.pdf'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Contact{' '}
+              </a>
             </li>
           </ul>
-        </div>
-      </div>
-      <div className='footer-rights'>
-        Copyright &#169; sankalpsportfolio.com | All rights reserved
-      </div>
-    </footer>
+        </Col>
+        <Col>
+          <ul style={{ listStyle: 'none', padding: 0 }}>
+            <li>
+              <a
+                className='text-decoration-none'
+                style={{ cursor: 'pointer', color: 'inherit' }}
+                href='https://www.linkedin.com/in/tsankalp/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                LinkedIn{' '}
+              </a>
+            </li>
+            <li>
+              <a
+                className='text-decoration-none'
+                style={{ cursor: 'pointer', color: 'inherit' }}
+                href='https://www.facebook.com/sankalp.tiwari.7583'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Facebook{' '}
+              </a>
+            </li>
+            <li>
+              <a
+                className='text-decoration-none'
+                style={{ cursor: 'pointer', color: 'inherit' }}
+                href='https://www.instagram.com/sankalp__tiwari/'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Instagram{' '}
+              </a>
+            </li>
+            <li>
+              <a
+                className='text-decoration-none'
+                style={{ cursor: 'pointer', color: 'inherit' }}
+                href='https://t.snapchat.com/fX8jAcPB'
+                target='_blank'
+                rel='noreferrer'
+              >
+                Snapchat{' '}
+              </a>
+            </li>
+          </ul>
+        </Col>
+      </Row>
+      <Row style={{ marginTop: '1vh' }} className='justify-content-center'>
+        <Col className='text-center' style={{ cursor: 'default' }}>
+          Copyright &#169; sankalpsportfolio.com | All rights reserved
+        </Col>
+      </Row>
+    </Container>
   );
 };
 

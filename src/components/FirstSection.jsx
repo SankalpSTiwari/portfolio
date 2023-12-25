@@ -3,10 +3,19 @@ import TypewriterComponent from 'typewriter-effect';
 import IMAGES from '../images';
 import './../styles.css'; // Import your styles
 
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Image from 'react-bootstrap/Image';
+import Row from 'react-bootstrap/Row';
+
+import Button from 'react-bootstrap/Button';
+
 const FirstSection = () => {
   const downloadResume = () => {
     // Implement the download resume logic
-    window.location.href = 'Sankalp_Resume.pdf';
+    window.open(
+      'https://docs.google.com/document/d/10_JS7j1Hll73AX4hiq_Jt0V0DvWIYPLe222mzFUiiVg/edit?usp=sharing'
+    );
   };
 
   const openGithubLink = () => {
@@ -15,42 +24,55 @@ const FirstSection = () => {
   };
 
   return (
-    <section className='firstSection'>
-      <div className='leftSection'>
-        <div>
-          Hi, my name is <span className='text-purple'>Sankalp</span>
-        </div>
-        <div>and I am passionate</div>
-        <div className='typewriter-container'>
-          <h4>
-            <TypewriterComponent
-              options={{
-                autoStart: true,
-                loop: true,
-                delay: 50,
-                strings: [
-                  'Web Developer',
-                  'ML Enthusiast',
-                  'Software Engineer',
-                ],
-              }}
-            />
-          </h4>
-        </div>
+    <Container style={{ marginBottom: '22vh', marginTop: '22vh' }}>
+      <Row>
+        <Col
+          md={6}
+          className='leftSection text-center'
+          style={{ marginTop: '10vh' }}
+        >
+          <h1>
+            Hi, my name is{' '}
+            <span className='text-purple' style={{ color: 'purple' }}>
+              Sankalp
+            </span>
+          </h1>
+          <h1>and I am passionate</h1>
+          <div className='typewriter-container'>
+            <h1 style={{ color: 'purple', marginBottom: '4vh' }}>
+              <TypewriterComponent
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  delay: 50,
+                  strings: [
+                    'Web Developer',
+                    'ML Enthusiast',
+                    'Software Engineer',
+                  ],
+                }}
+              />
+            </h1>
+          </div>
 
-        <div className='buttons'>
-          <button className='btn' onClick={downloadResume}>
-            Download Resume
-          </button>
-          <button className='btn' onClick={openGithubLink}>
-            Visit Github
-          </button>
-        </div>
-      </div>
-      <div className='rightSection'>
-        <img src={IMAGES.bg} alt='Background' />
-      </div>
-    </section>
+          <div className='buttons mt-4'>
+            <Button
+              variant='dark'
+              onClick={downloadResume}
+              style={{ marginRight: '10px' }}
+            >
+              View Resume
+            </Button>
+            <Button variant='dark' onClick={openGithubLink}>
+              Visit Github
+            </Button>
+          </div>
+        </Col>
+        <Col md={6} className='rightSection text-center'>
+          <Image src={IMAGES.bg} rounded width='300px' />
+        </Col>
+      </Row>
+    </Container>
   );
 };
 
