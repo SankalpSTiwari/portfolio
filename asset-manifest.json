@@ -1,16 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.796d0ebe.css",
-    "main.js": "/portfolio/static/js/main.ed2cde18.js",
+    "main.css": "/portfolio/static/css/main.241951ba.css",
+    "main.js": "/portfolio/static/js/main.1a4b63f5.js",
+    "static/media/SankalpProfile.png": "/portfolio/static/media/SankalpProfile.722886869b0a4f145e24.png",
+    "static/media/RcoemLogo.png": "/portfolio/static/media/RcoemLogo.12d37ccae5dfc4e157c0.png",
     "static/media/bg.png": "/portfolio/static/media/bg.f8fa5bc0223b16837547.png",
     "static/media/developer2.png": "/portfolio/static/media/developer2.a019f2199ff4c94b5204.png",
+    "static/media/Sankalp_Resume.pdf": "/portfolio/static/media/Sankalp_Resume.ca17f372302fe233537e.pdf",
     "static/media/degree.png": "/portfolio/static/media/degree.b5ef82549014e4bd181d.png",
+    "static/media/SjsuLogo.png": "/portfolio/static/media/SjsuLogo.c482c44a14487a877579.png",
+    "static/media/StetigLogo.png": "/portfolio/static/media/StetigLogo.f9f0b4fdb57f5013a25d.png",
     "index.html": "/portfolio/index.html",
-    "main.796d0ebe.css.map": "/portfolio/static/css/main.796d0ebe.css.map",
-    "main.ed2cde18.js.map": "/portfolio/static/js/main.ed2cde18.js.map"
+    "main.241951ba.css.map": "/portfolio/static/css/main.241951ba.css.map",
+    "main.1a4b63f5.js.map": "/portfolio/static/js/main.1a4b63f5.js.map"
   },
   "entrypoints": [
-    "static/css/main.796d0ebe.css",
-    "static/js/main.ed2cde18.js"
+    "static/css/main.241951ba.css",
+    "static/js/main.1a4b63f5.js"
   ]
 }
