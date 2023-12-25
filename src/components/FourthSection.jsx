@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 
 const FourthSection = () => {
   return (
-    <Container id='projects'>
+    <Container id='projects' style={{ marginBottom: '5vh' }}>
       <Row style={{ marginBottom: '2vh' }}>
         <h1 style={{ fontSize: '5.5vh', fontWeight: 'bold' }}>Projects</h1>
       </Row>

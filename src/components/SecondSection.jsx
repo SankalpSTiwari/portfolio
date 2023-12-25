@@ -11,14 +11,14 @@ import Card from 'react-bootstrap/Card';
 
 const SecondSection = () => {
   return (
-    <Container id='experience'>
+    <Container id='experience' style={{ marginBottom: '5vh' }}>
       <Row style={{ marginBottom: '2vh' }}>
         <h4 style={{ fontSize: '2.5vh' }}>What I have done so far</h4>
         <h1 style={{ fontSize: '5.5vh', fontWeight: 'bold' }}>
           Work Experience
         </h1>
       </Row>
-      <Row style={{ marginBottom: '5vh' }}>
+      <Row>
         <Col>
           <Card style={{ width: '18rem', height: '420px' }}>
             <Card.Img

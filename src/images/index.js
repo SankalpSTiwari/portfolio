@@ -7,6 +7,7 @@ const IMAGES = {
   sjsuLogo: require('./SjsuLogo.png'),
   sankalpProfile: require('./SankalpProfile.png'),
   resume: require('./Sankalp_Resume.pdf'),
+  qrcode: require('./qrcode.png'),
 };
 
 export default IMAGES;

@@ -13,7 +13,7 @@ const Footer = () => {
       style={{ marginTop: '5vh' }}
     >
       <Row
-        style={{ paddingTop: '1.5vh' }}
+        style={{ paddingTop: '1.75vh' }}
         className='d-flex align-items-center'
       >
         <Col style={{ fontSize: '1.75vw' }}>Sankalp's Developer Portfolio</Col>
@@ -54,7 +54,7 @@ const Footer = () => {
               <a
                 className='text-decoration-none'
                 style={{ cursor: 'pointer', color: 'inherit' }}
-                href='pdf_qrcode.pdf'
+                href='https://hihello.me/p/716715bb-8d16-4fd5-accc-1d1795ea34c0'
                 target='_blank'
                 rel='noreferrer'
               >
@@ -113,7 +113,10 @@ const Footer = () => {
         </Col>
       </Row>
       <Row style={{ marginTop: '1vh' }} className='justify-content-center'>
-        <Col className='text-center' style={{ cursor: 'default' }}>
+        <Col
+          className='text-center'
+          style={{ cursor: 'default', paddingBottom: '1vh' }}
+        >
           Copyright &#169; sankalpsportfolio.com | All rights reserved
         </Col>
       </Row>
