@@ -8,6 +8,7 @@ const IMAGES = {
   sankalpProfile: require('./SankalpProfile.png'),
   resume: require('./Sankalp_Resume.pdf'),
   qrcode: require('./qrcode.png'),
+  coursera: require('./coursera_logo.png'),
 };
 
 export default IMAGES;
