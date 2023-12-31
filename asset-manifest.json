@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.241951ba.css",
-    "main.js": "/portfolio/static/js/main.be6d05d3.js",
+    "main.js": "/portfolio/static/js/main.6a5d1aad.js",
     "static/media/SankalpProfile.png": "/portfolio/static/media/SankalpProfile.722886869b0a4f145e24.png",
     "static/media/RcoemLogo.png": "/portfolio/static/media/RcoemLogo.12d37ccae5dfc4e157c0.png",
     "static/media/bg.png": "/portfolio/static/media/bg.f8fa5bc0223b16837547.png",
@@ -13,10 +13,10 @@
     "static/media/qrcode.png": "/portfolio/static/media/qrcode.0b62eb53ff7e41dc2375.png",
     "index.html": "/portfolio/index.html",
     "main.241951ba.css.map": "/portfolio/static/css/main.241951ba.css.map",
-    "main.be6d05d3.js.map": "/portfolio/static/js/main.be6d05d3.js.map"
+    "main.6a5d1aad.js.map": "/portfolio/static/js/main.6a5d1aad.js.map"
   },
   "entrypoints": [
     "static/css/main.241951ba.css",
-    "static/js/main.be6d05d3.js"
+    "static/js/main.6a5d1aad.js"
   ]
 }
