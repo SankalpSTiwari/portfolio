@@ -68,8 +68,18 @@ const FirstSection = () => {
             </Button>
           </div>
         </Col>
-        <Col md={6} className='rightSection text-center'>
-          <Image src={IMAGES.bg} rounded width='300px' />
+        <Col
+          md={6}
+          className='rightSection text-center'
+          style={{ marginTop: '20px' }}
+        >
+          <Image
+            src={IMAGES.sankalpProfile}
+            className='pulsating-image'
+            width='300px'
+            roundedCircle
+            thumbnail
+          />
         </Col>
       </Row>
     </Container>
