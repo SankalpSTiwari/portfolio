@@ -35,7 +35,7 @@ const FourthSection = () => {
             <Card.Body>
               <Card.Title>Recipize</Card.Title>
               <Card.Text style={{ marginBottom: '42px' }}>
-                user-friendly mobile application built to offer personalized
+                A user-friendly mobile application built to offer personalized
                 recipe suggestions based on scanned ingredients.
               </Card.Text>
               <Button
@@ -210,7 +210,7 @@ const FourthSection = () => {
             <Card.Body>
               <Card.Title>TicTacToe</Card.Title>
               <Card.Text style={{ marginBottom: '90px' }}>
-                classic TicTacToe game brought to life with JavaScript!{' '}
+                Classic TicTacToe game brought to life with JavaScript!{' '}
               </Card.Text>
               <Button
                 variant='secondary'

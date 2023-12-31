@@ -7,7 +7,7 @@ import Col from 'react-bootstrap/Col';
 import IMAGES from '../images';
 const Certifications = () => {
   return (
-    <Container id='projects' style={{ marginBottom: '5vh' }}>
+    <Container id='certifications' style={{ marginBottom: '5vh' }}>
       <Row style={{ marginBottom: '2vh' }}>
         <h1 style={{ fontSize: '5.5vh', fontWeight: 'bold' }}>
           My Certifications
@@ -99,7 +99,7 @@ const Certifications = () => {
             />
             <Card.Body>
               <Card.Title>Data Science Methodology</Card.Title>
-              <Card.Text style={{ color: 'dimgray', paddingTop: '22px' }}>
+              <Card.Text style={{ color: 'dimgray', paddingTop: '24px' }}>
                 <strong>Coursera</strong>
                 <br /> Issued March 2020
                 <br /> Credential ID: AM49QJUDKKZW

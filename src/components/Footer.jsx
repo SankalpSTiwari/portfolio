@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <Container
       fluid
@@ -117,7 +119,7 @@ const Footer = () => {
           className='text-center'
           style={{ cursor: 'default', paddingBottom: '1vh' }}
         >
-          Copyright &#169; sankalpsportfolio.com | All rights reserved
+          Copyright &#169; work.sankalptiwari@gmail.com | {currentYear}
         </Col>
       </Row>
     </Container>
