@@ -5,6 +5,22 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 const Header = () => {
+  const handleContactClick = () => {
+    // Scroll to the element with id 'contact'
+    const contactElement = document.getElementById('contact');
+    if (contactElement) {
+      contactElement.scrollIntoView({ behavior: 'smooth' });
+
+      // Open the specified link in a new tab after scrolling
+      setTimeout(() => {
+        window.open(
+          'https://hihello.me/p/716715bb-8d16-4fd5-accc-1d1795ea34c0',
+          '_blank'
+        );
+      }, 3000); // Adjust the delay as needed
+    }
+  };
+
   return (
     <Navbar expand='lg' className='bg-body-tertiary'>
       <Container>
@@ -18,7 +34,7 @@ const Header = () => {
             <Nav.Link href='#experience'>About</Nav.Link>
             <Nav.Link href='#skills'>Skills</Nav.Link>
             <Nav.Link href='#projects'>Projects</Nav.Link>
-            <Nav.Link href='#contact'>Contact Me</Nav.Link>
+            <Nav.Link onClick={handleContactClick}>Contact Me</Nav.Link>
             {/* <NavDropdown title='Dropdown' id='basic-nav-dropdown'>
               <NavDropdown.Item href='#action/3.1'>Action</NavDropdown.Item>
               <NavDropdown.Item href='#action/3.2'>
