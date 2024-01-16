@@ -9,6 +9,11 @@ const IMAGES = {
   resume: require('./Sankalp_Resume.pdf'),
   qrcode: require('./qrcode.png'),
   coursera: require('./coursera_logo.png'),
+  progLang: require('./programming_languages.png'),
+  webTech: require('./web_technologies.png'),
+  frameworks: require('./frameworks.png'),
+  toolsServices: require('./tools_services.png'),
+  skillCardBg: require('./skill_card_bg.gif'),
 };
 
 export default IMAGES;
