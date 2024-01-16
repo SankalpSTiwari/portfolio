@@ -14,6 +14,18 @@ const IMAGES = {
   frameworks: require('./frameworks.png'),
   toolsServices: require('./tools_services.png'),
   skillCardBg: require('./skill_card_bg.gif'),
+  project_auditor: require('./project_auditor-enterprise-chat-ui.png'),
+  project_back2office: require('./project_back2office.png'),
+  project_bookstore: require('./project_bookstore-app.png'),
+  project_devconnector: require('./project_devconnector.png'),
+  project_gptalk: require('./project_gptalk.png'),
+  project_meme: require('./project_meme-generator-app.png'),
+  project_microblog: require('./project_microblog.png'),
+  project_recipize: require('./project_recipize.png'),
+  project_smarttrip: require('./project_smarttrip.png'),
+  project_space: require('./project_space_invaders2.png'),
+  project_tictactoe: require('./project_tictactoe.png'),
+  project_weather: require('./project_weather-forecast-app.png'),
 };
 
 export default IMAGES;

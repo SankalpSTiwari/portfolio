@@ -84,7 +84,7 @@
 	text-transform: uppercase;
   position: absolute;
   top: 110px;
-  padding: 40px 20px 0px 20px;
+  padding: 20px 25px 0px 25px;
 }
 #services .service-item p {
   color: white;
@@ -149,6 +149,9 @@
 	height: 300px;
 	overflow: hidden;
 	position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #projects .project-img:after {
 	content: '';
