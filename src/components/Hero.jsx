@@ -10,7 +10,7 @@ import Row from 'react-bootstrap/Row';
 
 import Button from 'react-bootstrap/Button';
 
-const FirstSection = () => {
+const Hero = () => {
   const downloadResume = () => {
     // Implement the download resume logic
     window.open(
@@ -86,4 +86,4 @@ const FirstSection = () => {
   );
 };
 
-export default FirstSection;
+export default Hero;
