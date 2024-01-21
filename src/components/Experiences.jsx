@@ -13,15 +13,16 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const Experiences = () => {
   return (
-    <Container id='experience' style={{ marginBottom: '5vh' }}>
-      <Row style={{ marginBottom: '2vh' }}>
-        <h4 style={{ fontSize: '2.5vh' }}>What I have done so far</h4>
-      </Row>
-      <Row>
+    <Container
+      className='experience-container'
+      id='experience'
+      style={{ marginBottom: '5vh' }}
+    >
+      <Row className='experiences-title'>
         <h1 className='section-title'>Work Experience</h1>
       </Row>
       <Row>
-        <Col className='d-flex justify-content-center'>
+        <Col className='work-card-col d-flex justify-content-center' md={6}>
           <Card className='work-card'>
             <Card.Img
               className='mx-auto'
@@ -50,7 +51,7 @@ const Experiences = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col className='d-flex justify-content-center'>
+        <Col className='work-card-col d-flex justify-content-center' md={6}>
           <Card className='work-card'>
             <Card.Img
               className='mx-auto mt-4 mb-2'
@@ -75,7 +76,7 @@ const Experiences = () => {
           </Card>
         </Col>
       </Row>
-      <Row>
+      <Row className='experiences-title'>
         <h1 className='section-title'>Education</h1>
       </Row>
 
@@ -84,9 +85,8 @@ const Experiences = () => {
         variant='dark'
         keyboard={true}
         pause='hover'
-        pauseOnHover={true}
       >
-        <Carousel.Item interval={2000}>
+        <Carousel.Item interval={1800}>
           <img
             className='first-slide carousel-image'
             src={IMAGES.rcoemLogo}
@@ -107,7 +107,6 @@ const Experiences = () => {
             src={IMAGES.sjsuLogo}
             alt='Masters College'
           />
-
           <Carousel.Caption className='carousel-caption'>
             <h3> Master's in Software Engineering</h3>
             <h4>2022 - 2024</h4>

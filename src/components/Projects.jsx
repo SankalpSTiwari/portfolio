@@ -12,9 +12,8 @@ const Projects = () => {
         </div>
         <div className='all-projects'>
           <div className='project-item'>
-            <div className='project-info'>
+            <div className='project-info container'>
               <h1>Back2Office</h1>
-
               <br />
               <p>
                 {' '}
@@ -65,7 +64,7 @@ const Projects = () => {
               <img
                 src={IMAGES.project_recipize}
                 alt='img'
-                style={{ height: '91%' }}
+                style={{ width: '35%', height: '91%' }}
               />
             </div>
           </div>
@@ -208,7 +207,7 @@ const Projects = () => {
               <img
                 src={IMAGES.project_gptalk}
                 alt='img'
-                style={{ height: '91%' }}
+                style={{ width: '35%', height: '91%' }}
               />
             </div>
           </div>
@@ -235,7 +234,7 @@ const Projects = () => {
               <img
                 src={IMAGES.project_auditor}
                 alt='img'
-                style={{ width: '91%', height: '91%' }}
+                style={{ width: '100%', height: '100%' }}
               />
             </div>
           </div>
@@ -263,7 +262,7 @@ const Projects = () => {
               <img
                 src={IMAGES.project_bookstore}
                 alt='img'
-                style={{ width: '91%' }}
+                style={{ width: '91%', height: '91%' }}
               />
             </div>
           </div>

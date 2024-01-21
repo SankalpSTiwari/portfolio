@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import TypewriterComponent from 'typewriter-effect';
 import IMAGES from '../images';
 import './../styles.css'; // Import your styles
@@ -24,18 +24,11 @@ const Hero = () => {
   };
 
   return (
-    <Container style={{ marginBottom: '22vh', marginTop: '22vh' }}>
+    <Container className='hero-container'>
       <Row>
-        <Col
-          md={6}
-          className='leftSection text-center'
-          style={{ marginTop: '10vh' }}
-        >
+        <Col className='hero-left' md={6}>
           <h1>
-            Hi, my name is{' '}
-            <span className='text-purple' style={{ color: 'purple' }}>
-              Sankalp
-            </span>
+            Hi, my name is <span className='text-purple'>Sankalp</span>
           </h1>
           <h1>and I am passionate</h1>
           <div className='typewriter-container'>
@@ -57,22 +50,23 @@ const Hero = () => {
 
           <div className='buttons mt-4'>
             <Button
+              className='hero-left-button'
               variant='dark'
               onClick={downloadResume}
-              style={{ marginRight: '10px' }}
             >
               View Resume
             </Button>
-            <Button variant='dark' onClick={openGithubLink}>
+
+            <Button
+              className='hero-left-button'
+              variant='dark'
+              onClick={openGithubLink}
+            >
               Visit Github
             </Button>
           </div>
         </Col>
-        <Col
-          md={6}
-          className='rightSection text-center'
-          style={{ marginTop: '20px' }}
-        >
+        <Col className='hero-right' md={6}>
           <Image
             src={IMAGES.sankalpProfile}
             className='pulsating-image'

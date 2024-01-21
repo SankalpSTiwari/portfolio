@@ -8,11 +8,9 @@ import IMAGES from '../images';
 import './../styles.css'; // Import your styles
 const Certifications = () => {
   return (
-    <Container id='certifications' style={{ marginBottom: '5vh' }}>
-      <Row style={{ marginBottom: '2vh' }}>
-        <h1 style={{ fontSize: '5.5vh', fontWeight: 'bold' }}>
-          My Certifications
-        </h1>
+    <Container id='certifications'>
+      <Row>
+        <h1 className='section-title'>Certifications</h1>
       </Row>
       <Row>
         <Col className='mb-3 d-flex justify-content-center'>
@@ -31,13 +29,10 @@ const Certifications = () => {
                 <br /> Credential ID: Y6ZMLEFJU9GC
               </Card.Text>
               <Button
+                className='certification-card-button'
                 variant='primary'
                 href='https://www.coursera.org/account/accomplishments/specialization/certificate/Y6ZMLEFJU9GC'
                 target='_blank'
-                style={{
-                  margin: 'auto',
-                  display: 'block',
-                }}
               >
                 Show credential
               </Button>
@@ -62,13 +57,10 @@ const Certifications = () => {
                 <br /> Credential ID: F8NX9XADAGAQ
               </Card.Text>
               <Button
+                className='certification-card-button'
                 variant='primary'
                 href='https://www.coursera.org/account/accomplishments/certificate/F8NX9XADAGAQ'
                 target='_blank'
-                style={{
-                  margin: 'auto',
-                  display: 'block',
-                }}
               >
                 Show credential
               </Button>
@@ -85,19 +77,16 @@ const Certifications = () => {
             />
             <Card.Body>
               <Card.Title>Data Science Methodology</Card.Title>
-              <Card.Text style={{ color: 'dimgray', paddingTop: '24px' }}>
+              <Card.Text style={{ color: 'dimgray' }}>
                 <strong>Coursera</strong>
                 <br /> Issued March 2020
                 <br /> Credential ID: AM49QJUDKKZW
               </Card.Text>
               <Button
+                className='certification-card-button'
                 variant='primary'
                 href='https://www.coursera.org/account/accomplishments/specialization/certificate/AM49QJUDKKZW'
                 target='_blank'
-                style={{
-                  margin: 'auto',
-                  display: 'block',
-                }}
               >
                 Show credential
               </Button>
@@ -116,19 +105,16 @@ const Certifications = () => {
             />
             <Card.Body>
               <Card.Title>Open Source tools for Data Science</Card.Title>
-              <Card.Text style={{ color: 'dimgray', paddingTop: '22px' }}>
+              <Card.Text style={{ color: 'dimgray' }}>
                 <strong>Coursera</strong>
                 <br /> Issued March 2020
                 <br /> Credential ID: NSW7RZ2Y9QMW
               </Card.Text>
               <Button
+                className='certification-card-button'
                 variant='primary'
                 href='https://www.coursera.org/account/accomplishments/specialization/certificate/NSW7RZ2Y9QMW'
                 target='_blank'
-                style={{
-                  margin: 'auto',
-                  display: 'block',
-                }}
               >
                 Show credential
               </Button>
@@ -144,20 +130,21 @@ const Certifications = () => {
               src={IMAGES.coursera}
             />
             <Card.Body>
-              <Card.Title>What is Data Science?</Card.Title>
-              <Card.Text style={{ color: 'dimgray', paddingTop: '22px' }}>
+              <Card.Title>
+                What is Data Science?
+                <br />
+                <br />
+              </Card.Title>
+              <Card.Text style={{ color: 'dimgray' }}>
                 <strong>Coursera</strong>
                 <br /> Issued Feb 2020
                 <br /> Credential ID: 4LWR8PFSBNCN
               </Card.Text>
               <Button
+                className='certification-card-button'
                 variant='primary'
                 href='https://www.coursera.org/account/accomplishments/specialization/certificate/4LWR8PFSBNCN'
                 target='_blank'
-                style={{
-                  margin: 'auto',
-                  display: 'block',
-                }}
               >
                 Show credential
               </Button>
@@ -174,19 +161,16 @@ const Certifications = () => {
             />
             <Card.Body>
               <Card.Title>Machine Learning - Stanford</Card.Title>
-              <Card.Text style={{ color: 'dimgray', paddingTop: '22px' }}>
+              <Card.Text style={{ color: 'dimgray' }}>
                 <strong>Coursera</strong>
                 <br /> Issued Aug 2019
                 <br /> Credential ID: EYZP7U9XDSQ5
               </Card.Text>
               <Button
+                className='certification-card-button'
                 variant='primary'
                 href='https://www.coursera.org/account/accomplishments/specialization/certificate/EYZP7U9XDSQ5'
                 target='_blank'
-                style={{
-                  margin: 'auto',
-                  display: 'block',
-                }}
               >
                 Show credential
               </Button>

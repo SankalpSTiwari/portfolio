@@ -1,20 +1,21 @@
 import React from 'react';
 import IMAGES from '../images';
+import './../styles.css'; // Import your styles
 
 const Skills = () => {
   return (
     <section id='services'>
       <div className='services container'>
-        <div className='service-top'>
+        <div>
           <h1 className='section-title'>Skills</h1>
         </div>
         <div className='service-bottom'>
           <div className='service-item'>
             <div className='icon'>
               <img
+                className='skill-card'
                 src={IMAGES.progLang}
                 alt='Programming Languages Icon'
-                style={{ width: '70px', height: '70px' }}
               />
             </div>
             <h2>Programming Languages</h2>
@@ -25,9 +26,9 @@ const Skills = () => {
           <div className='service-item'>
             <div className='icon'>
               <img
+                className='skill-card'
                 src={IMAGES.webTech}
                 alt='Web Technologies Icon'
-                style={{ width: '70px', height: '70px' }}
               />
             </div>
             <h2>Web Technologies</h2>
@@ -39,9 +40,9 @@ const Skills = () => {
           <div className='service-item'>
             <div className='icon'>
               <img
+                className='skill-card'
                 src={IMAGES.frameworks}
                 alt='Cloud Icon'
-                style={{ width: '70px', height: '70px' }}
               />
             </div>
             <h2>Frameworks & Databases</h2>
@@ -53,9 +54,9 @@ const Skills = () => {
           <div className='service-item'>
             <div className='icon'>
               <img
+                className='skill-card'
                 src={IMAGES.toolsServices}
                 alt='Operating System and Database Icon'
-                style={{ width: '70px', height: '70px' }}
               />
             </div>
             <h2>Tools & Services</h2>

@@ -21,7 +21,54 @@
     border-radius: 50%;
     border: 10px solid #00AFC1;
   }
+  h1.section-title {
+		font-size: 7vh;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    /* margin-top: 1vh; */
+	}
 
+  /* Hero */
+
+  .text-purple{
+    color: purple;
+  }
+  
+  .hero-left {
+    text-align: center;
+    align-items: center;
+    padding-top: 5vh;
+  }
+  .hero-left-button {
+    margin: 5px;
+  }
+  .hero-right {
+    text-align: center;
+    align-items: center;
+
+  }
+  .col-with-padding {
+    text-align: center;
+    justify-content: center;
+  }
+
+  /* Mobile Mode */
+  @media only screen and (max-width: 767px) {
+    .hero-container {
+      margin-top: 12vh;
+    }
+    .hero-right{
+      padding-top: 8vh;
+    }
+  }
+
+  /* Desktop Mode */
+  @media only screen and (min-width: 768px) {
+    .hero-container {
+      margin-bottom: 22vh;
+      margin-top: 22vh;
+    }
+  }
 
   /* Services Section */
 #services .services {
@@ -95,8 +142,37 @@
   left: 10px;
 }
 
+.skill-card {
+  width: 70px;
+  height: 70px;
+}
+
+/* Mobile Mode */
+@media only screen and (max-width: 767px) {
+  .section-title {
+    text-align: center;
+  }
+}
+
+/* Desktop Mode */
+/* @media only screen and (min-width: 768px) {
+  .hero-container {
+    margin-bottom: 22vh;
+    margin-top: 22vh;
+  }
+} */
 
 /* Experience Section */
+.experience-container{
+  padding-bottom: 5vh;
+}
+.experiences-title{
+  text-align: center;
+  padding: 5vh 0 5vh 0;
+}
+.work-card-col{
+  padding: 1vh;
+}
 .work-card {
   width: 50vh;
   height: 420px;
@@ -113,11 +189,36 @@
   border-radius: 15px;
   border-color:lightgrey;
 }
+/* Mobile Mode */
+@media only screen and (max-width: 767px) {
+  .custom-carousel {
+    border: 1px solid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 450px; /* Adjust the height value as needed */
+    border-radius: 15px;
+    border-color:lightgrey;
+  }
+}
+
+/* Desktop Mode */
+@media only screen and (min-width: 768px) {
+  .custom-carousel {
+    border: 1px solid;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 350px; /* Adjust the height value as needed */
+    border-radius: 15px;
+    border-color:lightgrey;
+  }
+}
 
 .carousel-image {
   height: 150px;
   width: 150px;
-  margin-bottom: 140px;
+  margin-bottom: 220px;
   margin-top: 25px;
 }
 
@@ -164,7 +265,7 @@
 	color: white;
 }
 #projects .project-info h1 {
-	font-size: 4rem;
+	font-size: 6vh;
 	font-weight: 500;
 }
 #projects .project-info h2 {
@@ -200,6 +301,25 @@
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
+
+
+/* Mobile Mode */
+@media only screen and (max-width: 767px) {
+  #projects .project-info h1 {
+    font-size: 6vh;
+    font-weight:bold
+  }
+  #projects .project-info p {
+    font-size: 2.2vh;
+  }
+  
+}
+
+/* Desktop Mode */
+@media only screen and (min-width: 768px) {
+
+}
+
 /* End Projects section */
 /* Certifications section */
 .certification-card {
@@ -216,6 +336,10 @@
   margin: auto;
   display: block;
   /* Add other styles as needed */
+}
+.certification-card-button {
+  margin: auto;
+  display: block;
 }
 /* Keyframes */
 @keyframes hamburger_puls {
@@ -257,17 +381,13 @@
 		font-size: 2.5rem;
 		padding: 20px 60px;
 	}
-	h1.section-title {
-		font-size: 5rem;
-    font-weight: bold;
-    margin-bottom: 2vh;
-    /* margin-top: 1vh; */
-	}
+	
 
 	/* Hero */
 	#hero h1 {
 		font-size: 7rem;
 	}
+  
 	/* End Hero */
 
 	/* Services Section */
