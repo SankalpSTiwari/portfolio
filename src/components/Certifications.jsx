@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import IMAGES from '../images';
+import './../styles.css'; // Import your styles
 const Certifications = () => {
   return (
     <Container id='certifications' style={{ marginBottom: '5vh' }}>
@@ -14,18 +15,13 @@ const Certifications = () => {
         </h1>
       </Row>
       <Row>
-        <Col className='mb-3'>
-          <Card style={{ width: '14.2rem', height: '480px' }}>
+        <Col className='mb-3 d-flex justify-content-center'>
+          <Card className='certification-card'>
             {/* <Card.Img variant='top' src='holder.js/100px180' /> */}
             <Card.Img
+              className='certification-card-img'
               variant='top'
               src={IMAGES.coursera}
-              style={{
-                height: '225px',
-                width: '225px',
-                margin: 'auto',
-                display: 'block',
-              }}
             />
             <Card.Body>
               <Card.Title>Python for Everybody Specialization</Card.Title>
@@ -48,18 +44,13 @@ const Certifications = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col className='mb-3'>
-          <Card style={{ width: '14.2rem', height: '480px' }}>
+        <Col className='mb-3 d-flex justify-content-center'>
+          <Card className='certification-card'>
             {/* <Card.Img variant='top' src='holder.js/100px180' /> */}
             <Card.Img
+              className='certification-card-img'
               variant='top'
               src={IMAGES.coursera}
-              style={{
-                height: '225px',
-                width: '225px',
-                margin: 'auto',
-                display: 'block',
-              }}
             />
             <Card.Body>
               <Card.Title>
@@ -84,18 +75,13 @@ const Certifications = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col className='mb-3'>
-          <Card style={{ width: '14.2rem', height: '480px' }}>
+        <Col className='mb-3 d-flex justify-content-center'>
+          <Card className='certification-card'>
             {/* <Card.Img variant='top' src='holder.js/100px180' /> */}
             <Card.Img
+              className='certification-card-img'
               variant='top'
               src={IMAGES.coursera}
-              style={{
-                height: '225px',
-                width: '225px',
-                margin: 'auto',
-                display: 'block',
-              }}
             />
             <Card.Body>
               <Card.Title>Data Science Methodology</Card.Title>
@@ -120,18 +106,13 @@ const Certifications = () => {
         </Col>
       </Row>
       <Row>
-        <Col className='mb-3'>
-          <Card style={{ width: '14.2rem', height: '480px' }}>
+        <Col className='mb-3 d-flex justify-content-center'>
+          <Card className='certification-card'>
             {/* <Card.Img variant='top' src='holder.js/100px180' /> */}
             <Card.Img
+              className='certification-card-img'
               variant='top'
               src={IMAGES.coursera}
-              style={{
-                height: '225px',
-                width: '225px',
-                margin: 'auto',
-                display: 'block',
-              }}
             />
             <Card.Body>
               <Card.Title>Open Source tools for Data Science</Card.Title>
@@ -154,18 +135,13 @@ const Certifications = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col className='mb-3'>
-          <Card style={{ width: '14.2rem', height: '480px' }}>
+        <Col className='mb-3 d-flex justify-content-center'>
+          <Card className='certification-card'>
             {/* <Card.Img variant='top' src='holder.js/100px180' /> */}
             <Card.Img
+              className='certification-card-img'
               variant='top'
               src={IMAGES.coursera}
-              style={{
-                height: '225px',
-                width: '225px',
-                margin: 'auto',
-                display: 'block',
-              }}
             />
             <Card.Body>
               <Card.Title>What is Data Science?</Card.Title>
@@ -188,18 +164,13 @@ const Certifications = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col className='mb-3'>
-          <Card style={{ width: '14.2rem', height: '480px' }}>
+        <Col className='mb-3 d-flex justify-content-center'>
+          <Card className='certification-card'>
             {/* <Card.Img variant='top' src='holder.js/100px180' /> */}
             <Card.Img
+              className='certification-card-img'
               variant='top'
               src={IMAGES.coursera}
-              style={{
-                height: '225px',
-                width: '225px',
-                margin: 'auto',
-                display: 'block',
-              }}
             />
             <Card.Body>
               <Card.Title>Machine Learning - Stanford</Card.Title>

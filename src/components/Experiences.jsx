@@ -17,10 +17,8 @@ const Experiences = () => {
       <Row style={{ marginBottom: '2vh' }}>
         <h4 style={{ fontSize: '2.5vh' }}>What I have done so far</h4>
       </Row>
-      <Row style={{ marginBottom: '2vh' }}>
-        <h1 style={{ fontSize: '5.5vh', fontWeight: 'bold' }}>
-          Work Experience
-        </h1>
+      <Row>
+        <h1 className='section-title'>Work Experience</h1>
       </Row>
       <Row>
         <Col className='d-flex justify-content-center'>
@@ -38,7 +36,7 @@ const Experiences = () => {
             />
             <Card.Body style={{ textAlign: 'center' }}>
               <Card.Title>Software Engineer</Card.Title>
-              <Card.Text style={{ marginBottom: '60px' }}>
+              <Card.Text className='work-card-text'>
                 June 2020 - June 2022 <br />
                 Stetig Consulting, Pune, India
               </Card.Text>
@@ -62,7 +60,7 @@ const Experiences = () => {
             />
             <Card.Body style={{ textAlign: 'center' }}>
               <Card.Title>Student Assistant</Card.Title>
-              <Card.Text style={{ marginBottom: '35px' }}>
+              <Card.Text className='work-card-text'>
                 May 2023 - Present <br />
                 Office of Research, San Jose State University
               </Card.Text>
@@ -77,8 +75,8 @@ const Experiences = () => {
           </Card>
         </Col>
       </Row>
-      <Row style={{ marginBottom: '2vh' }}>
-        <h1 style={{ fontSize: '5.5vh', fontWeight: 'bold' }}>Education</h1>
+      <Row>
+        <h1 className='section-title'>Education</h1>
       </Row>
 
       <Carousel

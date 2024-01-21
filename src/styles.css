@@ -98,9 +98,11 @@
 
 /* Experience Section */
 .work-card {
-  width: calc(130vh / 3);
+  width: 50vh;
   height: 420px;
-  /* Add other styles as needed */
+}
+.work-card-text {
+  margin-bottom: 40px;
 }
 .custom-carousel {
   border: 1px solid;
@@ -199,7 +201,22 @@
 	transform: scale(1.1);
 }
 /* End Projects section */
+/* Certifications section */
+.certification-card {
+  /* Add your styles for the certification card container */
+  width: 250px;
+  height: 480px;
+  /* Add other styles as needed */
+}
 
+.certification-card-img {
+  /* Add your styles for the certification card image */
+  height: 225px;
+  width: 225px;
+  margin: auto;
+  display: block;
+  /* Add other styles as needed */
+}
 /* Keyframes */
 @keyframes hamburger_puls {
 	0% {
@@ -241,7 +258,10 @@
 		padding: 20px 60px;
 	}
 	h1.section-title {
-		font-size: 6rem;
+		font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 2vh;
+    /* margin-top: 1vh; */
 	}
 
 	/* Hero */
