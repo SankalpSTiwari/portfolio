@@ -23,8 +23,8 @@ const Experiences = () => {
         </h1>
       </Row>
       <Row>
-        <Col>
-          <Card style={{ width: '18rem', height: '420px' }}>
+        <Col className='d-flex justify-content-center'>
+          <Card className='work-card'>
             <Card.Img
               className='mx-auto'
               variant='top'
@@ -52,8 +52,8 @@ const Experiences = () => {
             </Card.Body>
           </Card>
         </Col>
-        <Col>
-          <Card style={{ width: '18rem', height: '420px' }}>
+        <Col className='d-flex justify-content-center'>
+          <Card className='work-card'>
             <Card.Img
               className='mx-auto mt-4 mb-2'
               variant='top'
@@ -81,8 +81,14 @@ const Experiences = () => {
         <h1 style={{ fontSize: '5.5vh', fontWeight: 'bold' }}>Education</h1>
       </Row>
 
-      <Carousel className='custom-carousel' variant='dark' keyboard={true}>
-        <Carousel.Item>
+      <Carousel
+        className='custom-carousel'
+        variant='dark'
+        keyboard={true}
+        pause='hover'
+        pauseOnHover={true}
+      >
+        <Carousel.Item interval={2000}>
           <img
             className='first-slide carousel-image'
             src={IMAGES.rcoemLogo}
@@ -97,7 +103,7 @@ const Experiences = () => {
             </p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item interval={2000}>
           <img
             className='second-slide carousel-image'
             src={IMAGES.sjsuLogo}

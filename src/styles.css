@@ -95,6 +95,13 @@
   left: 10px;
 }
 
+
+/* Experience Section */
+.work-card {
+  width: calc(130vh / 3);
+  height: 420px;
+  /* Add other styles as needed */
+}
 .custom-carousel {
   border: 1px solid;
   text-align: center;
