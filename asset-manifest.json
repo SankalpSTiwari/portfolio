@@ -1,22 +1,39 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9818ee3b.css",
-    "main.js": "/portfolio/static/js/main.28677622.js",
+    "main.css": "/portfolio/static/css/main.9257615b.css",
+    "main.js": "/portfolio/static/js/main.7c9fa5a3.js",
+    "static/media/project_devconnector.png": "/portfolio/static/media/project_devconnector.366dcaac801825da1099.png",
+    "static/media/skill_card_bg.gif": "/portfolio/static/media/skill_card_bg.c5a52170ba1a84f1efa0.gif",
+    "static/media/project_back2office.png": "/portfolio/static/media/project_back2office.c0fc289974a39fbcdb98.png",
     "static/media/SankalpProfile.png": "/portfolio/static/media/SankalpProfile.722886869b0a4f145e24.png",
+    "static/media/project_smarttrip.png": "/portfolio/static/media/project_smarttrip.668235d6a8d06865a9df.png",
+    "static/media/project_microblog.png": "/portfolio/static/media/project_microblog.b72fa347f5feea3d3690.png",
     "static/media/RcoemLogo.png": "/portfolio/static/media/RcoemLogo.12d37ccae5dfc4e157c0.png",
     "static/media/bg.png": "/portfolio/static/media/bg.f8fa5bc0223b16837547.png",
+    "static/media/project_meme-generator-app.png": "/portfolio/static/media/project_meme-generator-app.023773c7a715f6222ad6.png",
+    "static/media/project_recipize.png": "/portfolio/static/media/project_recipize.80089ab5625c01008287.png",
+    "static/media/project_tictactoe.png": "/portfolio/static/media/project_tictactoe.933d13333bb6eeda75ed.png",
+    "static/media/project_space_invaders2.png": "/portfolio/static/media/project_space_invaders2.6a5c3c5ce543f3d48a54.png",
+    "static/media/project_weather-forecast-app.png": "/portfolio/static/media/project_weather-forecast-app.ca6d9f381897e9f2a0c3.png",
+    "static/media/project_bookstore-app.png": "/portfolio/static/media/project_bookstore-app.3d1bcf78303c196ce20a.png",
     "static/media/developer2.png": "/portfolio/static/media/developer2.a019f2199ff4c94b5204.png",
     "static/media/Sankalp_Resume.pdf": "/portfolio/static/media/Sankalp_Resume.ca17f372302fe233537e.pdf",
+    "static/media/project_gptalk.png": "/portfolio/static/media/project_gptalk.9b072c195665c747789e.png",
+    "static/media/project_auditor-enterprise-chat-ui.png": "/portfolio/static/media/project_auditor-enterprise-chat-ui.bf66deb5a7d4bb4e8b79.png",
     "static/media/degree.png": "/portfolio/static/media/degree.b5ef82549014e4bd181d.png",
+    "static/media/web_technologies.png": "/portfolio/static/media/web_technologies.c9304016730ba664ec51.png",
+    "static/media/tools_services.png": "/portfolio/static/media/tools_services.ba60f8a20105d7349ef9.png",
+    "static/media/frameworks.png": "/portfolio/static/media/frameworks.3337842c7df045ff2223.png",
+    "static/media/programming_languages.png": "/portfolio/static/media/programming_languages.2bef200d1f0dccfe14ab.png",
     "static/media/SjsuLogo.png": "/portfolio/static/media/SjsuLogo.c482c44a14487a877579.png",
     "static/media/StetigLogo.png": "/portfolio/static/media/StetigLogo.f9f0b4fdb57f5013a25d.png",
     "static/media/qrcode.png": "/portfolio/static/media/qrcode.0b62eb53ff7e41dc2375.png",
     "index.html": "/portfolio/index.html",
-    "main.9818ee3b.css.map": "/portfolio/static/css/main.9818ee3b.css.map",
-    "main.28677622.js.map": "/portfolio/static/js/main.28677622.js.map"
+    "main.9257615b.css.map": "/portfolio/static/css/main.9257615b.css.map",
+    "main.7c9fa5a3.js.map": "/portfolio/static/js/main.7c9fa5a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.9818ee3b.css",
-    "static/js/main.28677622.js"
+    "static/css/main.9257615b.css",
+    "static/js/main.7c9fa5a3.js"
   ]
 }
