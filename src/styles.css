@@ -95,6 +95,28 @@
   left: 10px;
 }
 
+.custom-carousel {
+  border: 1px solid;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 350px; /* Adjust the height value as needed */
+  border-radius: 15px;
+  border-color:lightgrey;
+}
+
+.carousel-image {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 140px;
+  margin-top: 25px;
+}
+
+.carousel-caption {
+  color: 'black';
+  top: 170px;
+}
+
 /* Projects section */
 #projects .projects {
 	flex-direction: column;

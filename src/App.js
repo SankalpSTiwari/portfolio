@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
-import SecondSection from './components/SecondSection';
+import Experiences from './components/Experiences';
 import ThirdSection from './components/ThirdSection';
 import FourthSection from './components/FourthSection';
 import Certifications from './components/Certifications';
@@ -17,7 +17,7 @@ const App = () => {
       <Header />
       <Hero />
       <Skills />
-      <SecondSection />
+      <Experiences />
       <Projects />
       {/* <ThirdSection />
       <FourthSection /> */}
