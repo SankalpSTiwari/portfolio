@@ -13,11 +13,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const Experiences = () => {
   return (
-    <Container
-      className='experience-container'
-      id='experience'
-      style={{ marginBottom: '5vh' }}
-    >
+    <Container className='experience-container' id='experience'>
       <Row className='experiences-title'>
         <h1 className='section-title'>Work Experience</h1>
       </Row>

@@ -9,7 +9,7 @@ import './../styles.css'; // Import your styles
 const Certifications = () => {
   return (
     <Container id='certifications'>
-      <Row>
+      <Row className='certification-title'>
         <h1 className='section-title'>Certifications</h1>
       </Row>
       <Row>

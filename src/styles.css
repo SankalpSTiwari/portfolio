@@ -25,6 +25,8 @@
 		font-size: 7vh;
     font-weight: bold;
     margin-bottom: 2vh;
+    text-align: center;
+    text-decoration: underline;
     /* margin-top: 1vh; */
 	}
 
@@ -55,7 +57,7 @@
   /* Mobile Mode */
   @media only screen and (max-width: 767px) {
     .hero-container {
-      margin-top: 12vh;
+      margin-top: 8vh;
     }
     .hero-right{
       padding-top: 8vh;
@@ -66,7 +68,7 @@
   @media only screen and (min-width: 768px) {
     .hero-container {
       margin-bottom: 22vh;
-      margin-top: 22vh;
+      margin-top: 37vh;
     }
   }
 
@@ -76,7 +78,7 @@
 	text-align: center;
 	max-width: 1500px;
 	margin: 0 auto;
-	padding: 100px 0;
+	padding: 8vh 0;
 }
 #services .service-top {
 	max-width: 400px;
@@ -131,6 +133,8 @@
 	text-transform: uppercase;
   position: absolute;
   top: 110px;
+  left: 50%; /* Set left to 50% */
+  transform: translateX(-50%); /* Center horizontally */
   padding: 20px 25px 0px 25px;
 }
 #services .service-item p {
@@ -163,9 +167,6 @@
 } */
 
 /* Experience Section */
-.experience-container{
-  padding-bottom: 5vh;
-}
 .experiences-title{
   text-align: center;
   padding: 5vh 0 5vh 0;
@@ -235,7 +236,8 @@
 	padding: 100px 0;
 }
 #projects .projects-header h1 {
-	margin-bottom: 50px;
+	margin-bottom: 6vh;
+  text-align: center;
 }
 #projects .all-projects {
 	display: flex;
@@ -322,6 +324,9 @@
 
 /* End Projects section */
 /* Certifications section */
+.certification-title{
+  padding-bottom: 6vh;
+}
 .certification-card {
   /* Add your styles for the certification card container */
   width: 250px;
