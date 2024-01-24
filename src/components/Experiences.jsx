@@ -34,8 +34,11 @@ const Experiences = () => {
             <Card.Body style={{ textAlign: 'center' }}>
               <Card.Title>Software Engineer</Card.Title>
               <Card.Text className='work-card-text'>
-                June 2020 - June 2022 <br />
-                Stetig Consulting, Pune, India
+                June 2020 - June 2022
+                <br />
+                Stetig Consulting,
+                <br />
+                Pune, India
               </Card.Text>
               <Button
                 variant='secondary'
@@ -58,8 +61,11 @@ const Experiences = () => {
             <Card.Body style={{ textAlign: 'center' }}>
               <Card.Title>Student Assistant</Card.Title>
               <Card.Text className='work-card-text'>
-                May 2023 - Present <br />
-                Office of Research, San Jose State University
+                May 2023 - Present
+                <br />
+                San Jose State University Research Foundation
+                <br />
+                San Jose, CA, USA
               </Card.Text>
               <Button
                 variant='secondary'
