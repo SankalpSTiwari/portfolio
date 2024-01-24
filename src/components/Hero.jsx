@@ -24,7 +24,7 @@ const Hero = () => {
   };
 
   return (
-    <Container className='hero-container'>
+    <Container id='home' className='hero-container'>
       <Row>
         <Col className='hero-left' md={6}>
           <h1>
