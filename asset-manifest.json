@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.9257615b.css",
-    "main.js": "/portfolio/static/js/main.7c9fa5a3.js",
+    "main.js": "/portfolio/static/js/main.9eefc0db.js",
     "static/media/project_devconnector.png": "/portfolio/static/media/project_devconnector.366dcaac801825da1099.png",
     "static/media/skill_card_bg.gif": "/portfolio/static/media/skill_card_bg.c5a52170ba1a84f1efa0.gif",
     "static/media/project_back2office.png": "/portfolio/static/media/project_back2office.c0fc289974a39fbcdb98.png",
@@ -10,6 +10,7 @@
     "static/media/project_microblog.png": "/portfolio/static/media/project_microblog.b72fa347f5feea3d3690.png",
     "static/media/RcoemLogo.png": "/portfolio/static/media/RcoemLogo.12d37ccae5dfc4e157c0.png",
     "static/media/bg.png": "/portfolio/static/media/bg.f8fa5bc0223b16837547.png",
+    "static/media/SankalpProfile2.jpg": "/portfolio/static/media/SankalpProfile2.5f696e7ca6330e2d6e91.jpg",
     "static/media/project_meme-generator-app.png": "/portfolio/static/media/project_meme-generator-app.023773c7a715f6222ad6.png",
     "static/media/project_recipize.png": "/portfolio/static/media/project_recipize.80089ab5625c01008287.png",
     "static/media/project_tictactoe.png": "/portfolio/static/media/project_tictactoe.933d13333bb6eeda75ed.png",
@@ -25,15 +26,16 @@
     "static/media/tools_services.png": "/portfolio/static/media/tools_services.ba60f8a20105d7349ef9.png",
     "static/media/frameworks.png": "/portfolio/static/media/frameworks.3337842c7df045ff2223.png",
     "static/media/programming_languages.png": "/portfolio/static/media/programming_languages.2bef200d1f0dccfe14ab.png",
+    "static/media/SjsuLogo2.png": "/portfolio/static/media/SjsuLogo2.c9e197d3138a5d9b2529.png",
     "static/media/SjsuLogo.png": "/portfolio/static/media/SjsuLogo.c482c44a14487a877579.png",
     "static/media/StetigLogo.png": "/portfolio/static/media/StetigLogo.f9f0b4fdb57f5013a25d.png",
     "static/media/qrcode.png": "/portfolio/static/media/qrcode.0b62eb53ff7e41dc2375.png",
     "index.html": "/portfolio/index.html",
     "main.9257615b.css.map": "/portfolio/static/css/main.9257615b.css.map",
-    "main.7c9fa5a3.js.map": "/portfolio/static/js/main.7c9fa5a3.js.map"
+    "main.9eefc0db.js.map": "/portfolio/static/js/main.9eefc0db.js.map"
   },
   "entrypoints": [
     "static/css/main.9257615b.css",
-    "static/js/main.7c9fa5a3.js"
+    "static/js/main.9eefc0db.js"
   ]
 }
