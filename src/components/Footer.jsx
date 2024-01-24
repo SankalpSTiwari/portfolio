@@ -18,7 +18,7 @@ const Footer = () => {
         style={{ paddingTop: '1.75vh' }}
         className='d-flex align-items-center'
       >
-        <Col style={{ fontSize: '1.75vw' }}>Sankalp's Developer Portfolio</Col>
+        <Col style={{ fontSize: '1.75vh' }}>Sankalp's Developer Portfolio</Col>
         <Col>
           <ul style={{ listStyle: 'none', padding: 0 }}>
             <li>
@@ -52,6 +52,10 @@ const Footer = () => {
                 Services
               </a>
             </li>
+          </ul>
+        </Col>
+        <Col>
+          <ul style={{ listStyle: 'none', padding: 0 }}>
             <li>
               <a
                 className='text-decoration-none'
@@ -63,10 +67,6 @@ const Footer = () => {
                 Contact{' '}
               </a>
             </li>
-          </ul>
-        </Col>
-        <Col>
-          <ul style={{ listStyle: 'none', padding: 0 }}>
             <li>
               <a
                 className='text-decoration-none'
@@ -82,33 +82,11 @@ const Footer = () => {
               <a
                 className='text-decoration-none'
                 style={{ cursor: 'pointer', color: 'inherit' }}
-                href='https://www.facebook.com/sankalp.tiwari.7583'
+                href='https://github.com/SankalpSTiwari'
                 target='_blank'
                 rel='noreferrer'
               >
-                Facebook{' '}
-              </a>
-            </li>
-            <li>
-              <a
-                className='text-decoration-none'
-                style={{ cursor: 'pointer', color: 'inherit' }}
-                href='https://www.instagram.com/sankalp__tiwari/'
-                target='_blank'
-                rel='noreferrer'
-              >
-                Instagram{' '}
-              </a>
-            </li>
-            <li>
-              <a
-                className='text-decoration-none'
-                style={{ cursor: 'pointer', color: 'inherit' }}
-                href='https://t.snapchat.com/fX8jAcPB'
-                target='_blank'
-                rel='noreferrer'
-              >
-                Snapchat{' '}
+                Github{' '}
               </a>
             </li>
           </ul>
