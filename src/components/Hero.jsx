@@ -68,9 +68,9 @@ const Hero = () => {
         </Col>
         <Col className='hero-right' md={6}>
           <Image
-            src={IMAGES.sankalpProfile}
+            src={IMAGES.sankalpProfile2}
             className='pulsating-image'
-            width='300px'
+            style={{ width: '300px', height: '300px' }}
             roundedCircle
             thumbnail
           />
