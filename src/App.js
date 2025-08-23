@@ -1,28 +1,27 @@
-import React from 'react';
+import React from "react";
 
 // Components
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Experiences from './components/Experiences';
-import ThirdSection from './components/ThirdSection';
-import FourthSection from './components/FourthSection';
-import Certifications from './components/Certifications';
-import Footer from './components/Footer';
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import Experiences from "./components/Experiences";
+// ...existing code...
+import Certifications from "./components/Certifications";
+import Footer from "./components/Footer";
 
 const App = () => {
-  return (
-    <div>
-      <Header />
-      <Hero />
-      <Skills />
-      <Experiences />
-      <Projects />
-      <Certifications />
-      <Footer />
-    </div>
-  );
+    return (
+        <div>
+            <Header />
+            <Hero />
+            <Skills />
+            <Experiences />
+            <Projects />
+            <Certifications />
+            <Footer />
+        </div>
+    );
 };
 
 export default App;
