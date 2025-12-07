@@ -91,11 +91,18 @@ p {
   }
 
   /* Navbar Styling */
-  .navbar {
+  .navbar,
+  .custom-navbar {
     backdrop-filter: blur(10px);
     background-color: var(--navbar-bg) !important;
     box-shadow: 0 2px 15px var(--shadow-sm);
     transition: all 0.3s ease;
+  }
+  
+  .navbar-brand-custom {
+    font-weight: 700 !important;
+    font-size: 1.4rem !important;
+    color: var(--text-primary) !important;
   }
   
   .theme-toggle-btn {
@@ -118,15 +125,6 @@ p {
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
   }
   
-  .navbar-brand {
-    font-weight: 700 !important;
-    font-size: 1.4rem !important;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-  
   /* Navbar toggler for mobile in dark mode */
   .navbar-toggler {
     border-color: var(--text-secondary) !important;
@@ -138,7 +136,7 @@ p {
   
   .nav-link {
     font-weight: 500 !important;
-    color: var(--text-secondary) !important;
+    color: var(--text-primary) !important;
     margin: 0 8px;
     transition: all 0.3s ease;
     position: relative;

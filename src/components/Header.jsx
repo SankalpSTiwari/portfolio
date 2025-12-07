@@ -25,9 +25,9 @@ const Header = () => {
   };
 
   return (
-    <Navbar expand='lg' className='bg-body-tertiary' fixed='top'>
+    <Navbar expand='lg' className='custom-navbar' fixed='top'>
       <Container>
-        <Navbar.Brand style={{ cursor: 'default' }}>
+        <Navbar.Brand className='navbar-brand-custom' style={{ cursor: 'default' }}>
           Sankalp's Portfolio
         </Navbar.Brand>
         <Navbar.Toggle aria-controls='basic-navbar-nav' />
