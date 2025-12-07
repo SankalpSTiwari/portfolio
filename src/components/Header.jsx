@@ -1,10 +1,13 @@
 import React from 'react';
+import { useTheme } from '../ThemeContext';
 import './../styles.css'; // Import your styles
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import Button from 'react-bootstrap/Button';
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 const Header = () => {
+  const { theme, toggleTheme } = useTheme();
   const handleContactClick = () => {
     // Scroll to the element with id 'contact'
     const contactElement = document.getElementById('contact');
@@ -37,6 +40,14 @@ const Header = () => {
             <Nav.Link href='#certifications'>Certifications</Nav.Link>
             <Nav.Link onClick={handleContactClick}>Contact Me</Nav.Link>
           </Nav>
+          <Button
+            variant='outline-primary'
+            onClick={toggleTheme}
+            className='theme-toggle-btn'
+            aria-label='Toggle theme'
+          >
+            {theme === 'light' ? '🌙' : '☀️'}
+          </Button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

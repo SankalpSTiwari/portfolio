@@ -1,4 +1,5 @@
 import React from "react";
+import { ThemeProvider } from "./ThemeContext";
 
 // Components
 import Header from "./components/Header";
@@ -12,15 +13,17 @@ import Footer from "./components/Footer";
 
 const App = () => {
     return (
-        <div>
-            <Header />
-            <Hero />
-            <Skills />
-            <Experiences />
-            <Projects />
-            <Certifications />
-            <Footer />
-        </div>
+        <ThemeProvider>
+            <div>
+                <Header />
+                <Hero />
+                <Skills />
+                <Experiences />
+                <Projects />
+                <Certifications />
+                <Footer />
+            </div>
+        </ThemeProvider>
     );
 };
 
