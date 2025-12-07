@@ -35,8 +35,20 @@ const WorkExperienceCard = ({
                     <br />
                     {location}
                 </Card.Text>
-                <Button variant='secondary' href={link} target='_blank'>
-                    Visit site
+                <Button 
+                    variant='primary' 
+                    href={link} 
+                    target='_blank'
+                    style={{
+                        background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                        border: 'none',
+                        fontWeight: '600',
+                        padding: '10px 24px',
+                        borderRadius: '8px',
+                        transition: 'all 0.3s ease'
+                    }}
+                >
+                    Visit Site
                 </Button>
             </Card.Body>
         </Card>
