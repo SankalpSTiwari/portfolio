@@ -31,13 +31,7 @@ const Hero = () => {
             Hi, my name is <span className='text-purple'>Sankalp</span>
           </h1>
           
-          <h2 style={{ 
-            fontSize: '1.8rem', 
-            fontWeight: '600',
-            color: '#2d3748',
-            marginTop: '2.5vh',
-            marginBottom: '3vh'
-          }}>
+          <h2 className='hero-subtitle'>
             Software Engineer — Full Stack
           </h2>
           
