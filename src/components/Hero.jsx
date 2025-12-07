@@ -31,44 +31,52 @@ const Hero = () => {
             Hi, my name is <span className='text-purple'>Sankalp</span>
           </h1>
           
-          <div className='typewriter-container' style={{ marginTop: '3vh' }}>
-            <h1 style={{ color: 'purple', marginBottom: '3vh' }}>
+          <h2 style={{ 
+            fontSize: '1.8rem', 
+            fontWeight: '600',
+            color: '#2d3748',
+            marginTop: '2.5vh',
+            marginBottom: '1vh'
+          }}>
+            Software Engineer — Backend Full Stack
+          </h2>
+
+          <h3 style={{ 
+            fontSize: '1.2rem', 
+            fontWeight: '600',
+            color: '#667eea',
+            marginBottom: '3vh'
+          }}>
+            Ex-Goldman Sachs (SWE II)
+          </h3>
+          
+          <div className='typewriter-container'>
+            <h2 style={{ 
+              background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              fontSize: '1.5rem',
+              fontWeight: '600',
+              minHeight: '60px',
+              marginBottom: '3vh'
+            }}>
               <TypewriterComponent
                 options={{
                   autoStart: true,
                   loop: true,
                   delay: 50,
+                  deleteSpeed: 30,
                   strings: [
-                    'Software Engineer',
-                    'Full Stack Engineer',
-                    'Backend Engineer',
+                    'Building Distributed & Scalable Systems',
+                    'Crafting AI/LLM Solutions',
+                    'Developing Real-time Applications',
+                    'Engineering Cloud-Native Platforms',
                   ],
                 }}
               />
-            </h1>
+            </h2>
           </div>
-
-          <div className='badges-container' style={{ 
-            display: 'flex', 
-            flexWrap: 'wrap', 
-            gap: '12px', 
-            justifyContent: 'center',
-            marginBottom: '2.5vh'
-          }}>
-            <span className='hero-badge'>☁️ Distributed Systems</span>
-            <span className='hero-badge'>🤖 AI/LLM</span>
-            <span className='hero-badge'>⚡ Real-time</span>
-            <span className='hero-badge'>☕ Java/Spring Boot</span>
-          </div>
-
-          <h3 style={{ 
-            fontSize: '1.3rem', 
-            fontWeight: '600',
-            color: '#4a5568',
-            marginBottom: '3vh'
-          }}>
-            Ex-Goldman Sachs (SWE II)
-          </h3>
 
           <div className='buttons mt-4'>
             <Button
