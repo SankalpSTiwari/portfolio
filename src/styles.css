@@ -566,7 +566,7 @@ p {
 }
 .certification-card {
   width: 250px;
-  height: 480px;
+  height: 320px;
   border: none !important;
   border-radius: 15px !important;
   background-color: var(--card-bg) !important;
@@ -579,20 +579,27 @@ p {
 }
 .certification-card .card-title {
   color: var(--text-primary) !important;
+  font-size: 1.1rem !important;
+  margin-bottom: 1rem !important;
 }
 .certification-card .card-text,
 .cert-text {
   color: var(--text-secondary) !important;
 }
 
-.certification-card-img {
-  /* Add your styles for the certification card image */
-  height: 225px;
-  width: 225px;
-  margin: auto;
-  display: block;
-  /* Add other styles as needed */
+.cert-provider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
 }
+
+.cert-logo-badge {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
 .certification-card-button {
   margin: auto;
   display: block;

@@ -15,17 +15,14 @@ const Certifications = () => {
       <Row>
         <Col className='mb-3 d-flex justify-content-center'>
           <Card className='certification-card'>
-            {/* <Card.Img variant='top' src='holder.js/100px180' /> */}
-            <Card.Img
-              className='certification-card-img'
-              variant='top'
-              src={IMAGES.coursera}
-            />
             <Card.Body>
               <Card.Title>Python for Everybody Specialization</Card.Title>
               <Card.Text className='cert-text'>
-                <strong>Coursera</strong>
-                <br /> Issued Jun 2020
+                <div className='cert-provider'>
+                  <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
+                  <strong>Coursera</strong>
+                </div>
+                Issued Jun 2020
                 <br /> Credential ID: Y6ZMLEFJU9GC
               </Card.Text>
               <Button
@@ -41,19 +38,16 @@ const Certifications = () => {
         </Col>
         <Col className='mb-3 d-flex justify-content-center'>
           <Card className='certification-card'>
-            {/* <Card.Img variant='top' src='holder.js/100px180' /> */}
-            <Card.Img
-              className='certification-card-img'
-              variant='top'
-              src={IMAGES.coursera}
-            />
             <Card.Body>
               <Card.Title>
                 Business Metrics for Data-Driven Companies
               </Card.Title>
               <Card.Text className='cert-text'>
-                <strong>Coursera</strong>
-                <br /> Issued May 2020
+                <div className='cert-provider'>
+                  <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
+                  <strong>Coursera</strong>
+                </div>
+                Issued May 2020
                 <br /> Credential ID: F8NX9XADAGAQ
               </Card.Text>
               <Button
@@ -69,17 +63,14 @@ const Certifications = () => {
         </Col>
         <Col className='mb-3 d-flex justify-content-center'>
           <Card className='certification-card'>
-            {/* <Card.Img variant='top' src='holder.js/100px180' /> */}
-            <Card.Img
-              className='certification-card-img'
-              variant='top'
-              src={IMAGES.coursera}
-            />
             <Card.Body>
               <Card.Title>Data Science Methodology</Card.Title>
               <Card.Text className='cert-text'>
-                <strong>Coursera</strong>
-                <br /> Issued March 2020
+                <div className='cert-provider'>
+                  <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
+                  <strong>Coursera</strong>
+                </div>
+                Issued March 2020
                 <br /> Credential ID: AM49QJUDKKZW
               </Card.Text>
               <Button
@@ -97,17 +88,14 @@ const Certifications = () => {
       <Row>
         <Col className='mb-3 d-flex justify-content-center'>
           <Card className='certification-card'>
-            {/* <Card.Img variant='top' src='holder.js/100px180' /> */}
-            <Card.Img
-              className='certification-card-img'
-              variant='top'
-              src={IMAGES.coursera}
-            />
             <Card.Body>
               <Card.Title>Open Source tools for Data Science</Card.Title>
               <Card.Text className='cert-text'>
-                <strong>Coursera</strong>
-                <br /> Issued March 2020
+                <div className='cert-provider'>
+                  <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
+                  <strong>Coursera</strong>
+                </div>
+                Issued March 2020
                 <br /> Credential ID: NSW7RZ2Y9QMW
               </Card.Text>
               <Button
@@ -123,21 +111,14 @@ const Certifications = () => {
         </Col>
         <Col className='mb-3 d-flex justify-content-center'>
           <Card className='certification-card'>
-            {/* <Card.Img variant='top' src='holder.js/100px180' /> */}
-            <Card.Img
-              className='certification-card-img'
-              variant='top'
-              src={IMAGES.coursera}
-            />
             <Card.Body>
-              <Card.Title>
-                What is Data Science?
-                <br />
-                <br />
-              </Card.Title>
+              <Card.Title>What is Data Science?</Card.Title>
               <Card.Text className='cert-text'>
-                <strong>Coursera</strong>
-                <br /> Issued Feb 2020
+                <div className='cert-provider'>
+                  <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
+                  <strong>Coursera</strong>
+                </div>
+                Issued Feb 2020
                 <br /> Credential ID: 4LWR8PFSBNCN
               </Card.Text>
               <Button
@@ -153,17 +134,14 @@ const Certifications = () => {
         </Col>
         <Col className='mb-3 d-flex justify-content-center'>
           <Card className='certification-card'>
-            {/* <Card.Img variant='top' src='holder.js/100px180' /> */}
-            <Card.Img
-              className='certification-card-img'
-              variant='top'
-              src={IMAGES.coursera}
-            />
             <Card.Body>
               <Card.Title>Machine Learning - Stanford</Card.Title>
               <Card.Text className='cert-text'>
-                <strong>Coursera</strong>
-                <br /> Issued Aug 2019
+                <div className='cert-provider'>
+                  <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
+                  <strong>Coursera</strong>
+                </div>
+                Issued Aug 2019
                 <br /> Credential ID: EYZP7U9XDSQ5
               </Card.Text>
               <Button
