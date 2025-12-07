@@ -36,19 +36,10 @@ const Hero = () => {
             fontWeight: '600',
             color: '#2d3748',
             marginTop: '2.5vh',
-            marginBottom: '1vh'
-          }}>
-            Software Engineer — Backend Full Stack
-          </h2>
-
-          <h3 style={{ 
-            fontSize: '1.2rem', 
-            fontWeight: '600',
-            color: '#667eea',
             marginBottom: '3vh'
           }}>
-            Ex-Goldman Sachs (SWE II)
-          </h3>
+            Software Engineer — Full Stack
+          </h2>
           
           <div className='typewriter-container'>
             <h2 style={{ 
