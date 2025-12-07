@@ -580,7 +580,8 @@ p {
 .certification-card .card-title {
   color: var(--text-primary) !important;
 }
-.certification-card .card-text {
+.certification-card .card-text,
+.cert-text {
   color: var(--text-secondary) !important;
 }
 
@@ -595,6 +596,18 @@ p {
 .certification-card-button {
   margin: auto;
   display: block;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: none !important;
+  font-weight: 600 !important;
+  padding: 10px 24px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.certification-card-button:hover {
+  transform: translateY(-3px) !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
 }
 /* Keyframes */
 @keyframes hamburger_puls {

@@ -23,7 +23,7 @@ const Certifications = () => {
             />
             <Card.Body>
               <Card.Title>Python for Everybody Specialization</Card.Title>
-              <Card.Text style={{ color: 'dimgray' }}>
+              <Card.Text className='cert-text'>
                 <strong>Coursera</strong>
                 <br /> Issued Jun 2020
                 <br /> Credential ID: Y6ZMLEFJU9GC
@@ -51,7 +51,7 @@ const Certifications = () => {
               <Card.Title>
                 Business Metrics for Data-Driven Companies
               </Card.Title>
-              <Card.Text style={{ color: 'dimgray' }}>
+              <Card.Text className='cert-text'>
                 <strong>Coursera</strong>
                 <br /> Issued May 2020
                 <br /> Credential ID: F8NX9XADAGAQ
@@ -77,7 +77,7 @@ const Certifications = () => {
             />
             <Card.Body>
               <Card.Title>Data Science Methodology</Card.Title>
-              <Card.Text style={{ color: 'dimgray' }}>
+              <Card.Text className='cert-text'>
                 <strong>Coursera</strong>
                 <br /> Issued March 2020
                 <br /> Credential ID: AM49QJUDKKZW
@@ -105,7 +105,7 @@ const Certifications = () => {
             />
             <Card.Body>
               <Card.Title>Open Source tools for Data Science</Card.Title>
-              <Card.Text style={{ color: 'dimgray' }}>
+              <Card.Text className='cert-text'>
                 <strong>Coursera</strong>
                 <br /> Issued March 2020
                 <br /> Credential ID: NSW7RZ2Y9QMW
@@ -135,7 +135,7 @@ const Certifications = () => {
                 <br />
                 <br />
               </Card.Title>
-              <Card.Text style={{ color: 'dimgray' }}>
+              <Card.Text className='cert-text'>
                 <strong>Coursera</strong>
                 <br /> Issued Feb 2020
                 <br /> Credential ID: 4LWR8PFSBNCN
@@ -161,7 +161,7 @@ const Certifications = () => {
             />
             <Card.Body>
               <Card.Title>Machine Learning - Stanford</Card.Title>
-              <Card.Text style={{ color: 'dimgray' }}>
+              <Card.Text className='cert-text'>
                 <strong>Coursera</strong>
                 <br /> Issued Aug 2019
                 <br /> Credential ID: EYZP7U9XDSQ5
