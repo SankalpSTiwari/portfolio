@@ -52,16 +52,16 @@ const Experiences = () => {
             <Row className='justify-content-center'>
                 <WorkExperienceCard
                     imgSrc={IMAGES.goldmanSachsLogo}
-                    title='Associate'
+                    title='Software Engineer 2'
                     period='October 2024 - Present'
                     company='Goldman Sachs'
-                    location='New York, USA'
+                    location='New York, NY, USA'
                     link='https://www.goldmansachs.com/'
                 />
                 <WorkExperienceCard
                     imgSrc={IMAGES.sjsuLogo}
-                    title='Student Assistant'
-                    period='May 2023 - Present'
+                    title='Software Developer & Compliance Support'
+                    period='May 2023 - September 2024'
                     company='San Jose State University Research Foundation'
                     location='San Jose, CA, USA'
                     link='https://www.sjsu.edu/'
@@ -71,7 +71,7 @@ const Experiences = () => {
                     title='Software Engineer'
                     period='June 2020 - June 2022'
                     company='Stetig Consulting'
-                    location='Pune, India'
+                    location='Pune, Maharashtra, India'
                     link='https://stetig.in/'
                 />
             </Row>

@@ -18,9 +18,22 @@ const Skills = () => {
                 alt='Programming Languages Icon'
               />
             </div>
-            <h2>Programming Languages</h2>
+            <h2>Languages</h2>
             <p>
-              Java, JavaScript, TypeScript, Python, Go, Kotlin, Dart, C++, C
+              Java, Python, Go, JavaScript, TypeScript, C++, HTML, CSS, Shell, Perl, Groovy
+            </p>
+          </div>
+          <div className='service-item'>
+            <div className='icon'>
+              <img
+                className='skill-card'
+                src={IMAGES.frameworks}
+                alt='Frameworks Icon'
+              />
+            </div>
+            <h2>Frameworks & Libraries</h2>
+            <p>
+              Spring Boot, React.js, Node.js, Next.js, Angular, Express.js, Redux, Flask, Django, GraphQL
             </p>
           </div>
           <div className='service-item'>
@@ -28,13 +41,25 @@ const Skills = () => {
               <img
                 className='skill-card'
                 src={IMAGES.webTech}
-                alt='Web Technologies Icon'
+                alt='Database Icon'
               />
             </div>
-            <h2>Web Technologies</h2>
+            <h2>Databases & Data Technologies</h2>
             <p>
-              RESTful APIs, Node.js, GraphQL, Express.js, HTML, CSS, Tailwind
-              CSS, Next.js, AJAX, LLM Integrations
+              PostgreSQL, MySQL, MongoDB, Sybase, Firebase, SQL, NoSQL, Stored Procedures
+            </p>
+          </div>
+          <div className='service-item'>
+            <div className='icon'>
+              <img
+                className='skill-card'
+                src={IMAGES.toolsServices}
+                alt='Tools Icon'
+              />
+            </div>
+            <h2>Tools & Technologies</h2>
+            <p>
+              Apache Kafka, Zookeeper, Autosys, Docker, Kubernetes, Redis, Git, Jenkins, SonarQube, Postman, FTP
             </p>
           </div>
           <div className='service-item'>
@@ -45,10 +70,9 @@ const Skills = () => {
                 alt='Cloud Icon'
               />
             </div>
-            <h2>Frameworks & Databases</h2>
+            <h2>Cloud & Infrastructure</h2>
             <p>
-              React.js, Spring Boot, Flask, GCP, Django, Angular, Flutter, SQL,
-              MongoDB, PostgreSQL, SQLite, MySQL
+              Amazon Web Services (AWS), Google Cloud Platform (GCP), VMware, On-prem Systems, CI/CD Pipelines
             </p>
           </div>
           <div className='service-item'>
@@ -56,14 +80,12 @@ const Skills = () => {
               <img
                 className='skill-card'
                 src={IMAGES.toolsServices}
-                alt='Operating System and Database Icon'
+                alt='Other Skills Icon'
               />
             </div>
-            <h2>Tools & Services</h2>
+            <h2>Other</h2>
             <p>
-              Docker, Kubernetes, Apache Kafka, Git, Postman, AWS, Redis, Redux,
-              OAuth, JWT, SonarQube, Agile, Firebase/Firestore, ElasticSearch,
-              Databricks
+              REST APIs, Agile, API Gateway, Load Balancers, JWT, Salesforce, Jira, Confluence, Machine Learning, LLM/AI Integration
             </p>
           </div>
         </div>
