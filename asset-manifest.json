@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.550740f8.css",
-    "main.js": "/portfolio/static/js/main.c39c3a58.js",
+    "main.css": "/portfolio/static/css/main.e5e5e952.css",
+    "main.js": "/portfolio/static/js/main.b99a5560.js",
     "static/media/project_devconnector.png": "/portfolio/static/media/project_devconnector.366dcaac801825da1099.png",
     "static/media/skill_card_bg.gif": "/portfolio/static/media/skill_card_bg.c5a52170ba1a84f1efa0.gif",
     "static/media/project_back2office.png": "/portfolio/static/media/project_back2office.c0fc289974a39fbcdb98.png",
@@ -31,11 +31,11 @@
     "static/media/StetigLogo.png": "/portfolio/static/media/StetigLogo.f9f0b4fdb57f5013a25d.png",
     "static/media/qrcode.png": "/portfolio/static/media/qrcode.0b62eb53ff7e41dc2375.png",
     "index.html": "/portfolio/index.html",
-    "main.550740f8.css.map": "/portfolio/static/css/main.550740f8.css.map",
-    "main.c39c3a58.js.map": "/portfolio/static/js/main.c39c3a58.js.map"
+    "main.e5e5e952.css.map": "/portfolio/static/css/main.e5e5e952.css.map",
+    "main.b99a5560.js.map": "/portfolio/static/js/main.b99a5560.js.map"
   },
   "entrypoints": [
-    "static/css/main.550740f8.css",
-    "static/js/main.c39c3a58.js"
+    "static/css/main.e5e5e952.css",
+    "static/js/main.b99a5560.js"
   ]
 }
