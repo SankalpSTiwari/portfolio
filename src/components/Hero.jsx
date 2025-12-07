@@ -30,23 +30,45 @@ const Hero = () => {
           <h1>
             Hi, my name is <span className='text-purple'>Sankalp</span>
           </h1>
-          <h1>and I am passionate</h1>
-          <div className='typewriter-container'>
-            <h1 style={{ color: 'purple', marginBottom: '4vh' }}>
+          
+          <div className='typewriter-container' style={{ marginTop: '3vh' }}>
+            <h1 style={{ color: 'purple', marginBottom: '3vh' }}>
               <TypewriterComponent
                 options={{
                   autoStart: true,
                   loop: true,
                   delay: 50,
                   strings: [
-                    'Web Developer',
-                    'ML Enthusiast',
                     'Software Engineer',
+                    'Full Stack Engineer',
+                    'Backend Engineer',
                   ],
                 }}
               />
             </h1>
           </div>
+
+          <div className='badges-container' style={{ 
+            display: 'flex', 
+            flexWrap: 'wrap', 
+            gap: '12px', 
+            justifyContent: 'center',
+            marginBottom: '2.5vh'
+          }}>
+            <span className='hero-badge'>☁️ Distributed Systems</span>
+            <span className='hero-badge'>🤖 AI/LLM</span>
+            <span className='hero-badge'>⚡ Real-time</span>
+            <span className='hero-badge'>☕ Java/Spring Boot</span>
+          </div>
+
+          <h3 style={{ 
+            fontSize: '1.3rem', 
+            fontWeight: '600',
+            color: '#4a5568',
+            marginBottom: '3vh'
+          }}>
+            Ex-Goldman Sachs (SWE II)
+          </h3>
 
           <div className='buttons mt-4'>
             <Button
