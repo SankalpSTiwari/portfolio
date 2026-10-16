@@ -48,7 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact-form' className='contact-section'>
+    <section id='contact-form' className='contact-section scroll-animate'>
       <Container>
         <h1 className='section-title'>Get In Touch</h1>
 

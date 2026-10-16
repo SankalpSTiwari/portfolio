@@ -23,7 +23,7 @@ const pillars = [
 
 const About = () => {
   return (
-    <section id='about' className='about-section'>
+    <section id='about' className='about-section scroll-animate'>
       <Container>
         <h1 className='section-title'>About Me</h1>
         <Row className='justify-content-center'>

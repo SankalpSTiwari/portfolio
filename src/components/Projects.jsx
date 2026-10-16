@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 
 const Projects = () => {
   return (
-    <section id='projects'>
+    <section id='projects' className='scroll-animate'>
       <div className='projects container'>
         <div className='projects-header'>
           <h1 className='section-title'>Projects</h1>

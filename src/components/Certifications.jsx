@@ -44,7 +44,7 @@ const certs = [
 
 const Certifications = () => {
   return (
-    <section id='certifications' className='cert-section'>
+    <section id='certifications' className='cert-section scroll-animate'>
       <Container>
         <h1 className='section-title'>Certifications</h1>
         <Row className='justify-content-center g-4'>

@@ -32,7 +32,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id='services'>
+    <section id='services' className='scroll-animate'>
       <div className='skills-container'>
         <h1 className='section-title'>Skills</h1>
         <div className='skills-grid'>

@@ -97,7 +97,7 @@ const Experiences = () => {
   const { theme } = useTheme();
 
   return (
-    <Container className='experience-container text-center' id='experience'>
+    <Container className='experience-container text-center scroll-animate' id='experience'>
       <h1 className='section-title'>Experience</h1>
 
       <div className='timeline-wrapper'>
