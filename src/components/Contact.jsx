@@ -5,9 +5,9 @@ import './../styles.css';
 
 // To activate: create a free account at https://www.emailjs.com/
 // Replace these with your EmailJS credentials:
-const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
+const EMAILJS_SERVICE_ID  = 'service_x3vsl18';
+const EMAILJS_TEMPLATE_ID = 'template_iuhnad9';
+const EMAILJS_PUBLIC_KEY  = 'VRxYUUdw9AJE9fbiP';
 
 const Contact = () => {
   const form = useRef();
