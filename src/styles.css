@@ -455,55 +455,78 @@ p {
   box-shadow: 0 5px 20px var(--shadow-sm);
   overflow: hidden;
   background: var(--card-bg);
-  min-height: 360px;
-  display: flex;
-  align-items: stretch;
 }
-/* Override Bootstrap carousel to fill the container */
-.custom-carousel .carousel,
 .custom-carousel .carousel-inner,
 .custom-carousel .carousel-item {
-  height: 100%;
-  width: 100%;
+  border-radius: 20px;
+}
+/* Each slide is a self-contained flex card */
+.edu-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 32px 56px;  /* extra bottom for indicators */
+  gap: 24px;
+  text-align: center;
 }
 .carousel-logo-wrap {
+  width: 110px;
+  height: 110px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 36px 0 140px;
+  flex-shrink: 0;
 }
 .carousel-image {
-  height: 130px;
-  width: 130px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  /* White background pill so dark-mode logos stay legible */
-  background: #ffffff;
-  border-radius: 14px;
-  padding: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-.carousel-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px 24px;
-  background: linear-gradient(0deg, rgba(0,0,0,0.45) 0%, transparent 100%);
-  text-align: center;
+.edu-text h3 {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  color: var(--text-primary) !important;
+  margin-bottom: 4px !important;
 }
-.carousel-caption h3,
-.carousel-caption h4,
-.carousel-caption p {
-  color: #ffffff !important;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
-  margin-bottom: 2px;
+.edu-text h4 {
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  color: #667eea !important;
+  margin-bottom: 6px !important;
 }
-.carousel-caption h3 { font-size: 1.15rem !important; font-weight: 700 !important; }
-.carousel-caption h4 { font-size: 0.95rem !important; font-weight: 600 !important; opacity: 0.9; }
-.carousel-caption p  { font-size: 0.82rem !important; opacity: 0.85; margin: 0; }
-
-@media (max-width: 767px) {
-  .custom-carousel { min-height: 400px; }
+.edu-text p {
+  font-size: 0.88rem !important;
+  color: var(--text-muted) !important;
+  margin: 0 !important;
+}
+/* Indicator dots — always visible in both themes */
+.custom-carousel .carousel-indicators [data-bs-target] {
+  background-color: #667eea;
+  opacity: 0.4;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  border: none;
+}
+.custom-carousel .carousel-indicators .active {
+  opacity: 1;
+}
+/* Arrow controls */
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  filter: none;
+  background-image: none;
+}
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+  width: 44px;
+  opacity: 1;
+  color: var(--text-muted);
+  font-size: 1.4rem;
 }
 
 /* Projects section */
@@ -551,12 +574,13 @@ p {
 	color: white;
 }
 #projects .project-info h1 {
-	font-size: 6vh;
-	font-weight: 500;
+	font-size: clamp(1.4rem, 2.5vw, 2rem);
+	font-weight: 700;
 	color: white !important;
+	line-height: 1.25;
 }
 #projects .project-info h2 {
-	font-size: 1.8rem;
+	font-size: 1.4rem;
 	font-weight: 500;
 	margin-top: 10px;
 	color: white !important;
@@ -608,6 +632,25 @@ p {
 
 }
 
+/* Project GitHub button */
+#projects .project-info .btn {
+  margin-top: 16px;
+  background: rgba(255,255,255,0.18) !important;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(255,255,255,0.5) !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  padding: 8px 22px !important;
+  font-size: 0.9rem !important;
+  transition: all 0.25s ease !important;
+  backdrop-filter: blur(4px);
+}
+#projects .project-info .btn:hover {
+  background: rgba(255,255,255,0.3) !important;
+  border-color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.2) !important;
+}
 /* End Projects section */
 /* ===== Certifications Section ===== */
 .cert-section {

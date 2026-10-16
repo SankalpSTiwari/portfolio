@@ -116,33 +116,29 @@ const Experiences = () => {
         keyboard={true}
         pause='hover'
       >
-        <Carousel.Item interval={2000}>
-          <div className='carousel-logo-wrap'>
-            <img
-              className='carousel-image'
-              src={IMAGES.sjsuLogo}
-              alt='Masters College'
-            />
+        <Carousel.Item interval={3000}>
+          <div className='edu-slide'>
+            <div className='carousel-logo-wrap'>
+              <img className='carousel-image' src={IMAGES.sjsuLogo} alt='SJSU' />
+            </div>
+            <div className='edu-text'>
+              <h3>Master's in Software Engineering</h3>
+              <h4>2022 – 2024</h4>
+              <p>San Jose State University, California, USA</p>
+            </div>
           </div>
-          <Carousel.Caption className='carousel-caption'>
-            <h3>Master's in Software Engineering</h3>
-            <h4>2022 – 2024</h4>
-            <p>San Jose State University, California, USA</p>
-          </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={1800}>
-          <div className='carousel-logo-wrap'>
-            <img
-              className='carousel-image'
-              src={IMAGES.rcoemLogo}
-              alt='Bachelors College'
-            />
+        <Carousel.Item interval={3000}>
+          <div className='edu-slide'>
+            <div className='carousel-logo-wrap'>
+              <img className='carousel-image' src={IMAGES.rcoemLogo} alt='RCOEM' />
+            </div>
+            <div className='edu-text'>
+              <h3>Bachelor's in Information Technology</h3>
+              <h4>2016 – 2020</h4>
+              <p>Shri Ramdeobaba College of Engineering and Management, Nagpur, India</p>
+            </div>
           </div>
-          <Carousel.Caption className='carousel-caption'>
-            <h3>Bachelor's in Information Technology</h3>
-            <h4>2016 – 2020</h4>
-            <p>Shri Ramdeobaba College of Engineering and Management, Nagpur, India</p>
-          </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
     </Container>

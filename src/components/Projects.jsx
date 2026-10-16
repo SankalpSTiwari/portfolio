@@ -214,7 +214,7 @@ const Projects = () => {
 
           <div className='project-item'>
             <div className='project-info'>
-              <h1>meme-generator-app</h1>
+              <h1>Meme Generator</h1>
               <br />
               <p>
                 Web application to create your own customized memes.
@@ -241,7 +241,7 @@ const Projects = () => {
 
           <div className='project-item'>
             <div className='project-info'>
-              <h1>weather-forecast-app</h1>
+              <h1>Weather Forecast</h1>
               <br />
               <p>
                 Web application built using React to display and forecast
@@ -269,7 +269,7 @@ const Projects = () => {
 
           <div className='project-item'>
             <div className='project-info'>
-              <h1>bookstore-app</h1>
+              <h1>Bookstore App</h1>
               <br />
               <p>
                 Web application to list and organize books, featuring user
@@ -351,7 +351,7 @@ const Projects = () => {
 
           <div className='project-item'>
             <div className='project-info'>
-              <h1>Space-Invaders-2.0</h1>
+              <h1>Space Invaders 2.0</h1>
               <p>
                 Classic Space Invaders game with custom features implementing
                 various System Design patterns.
