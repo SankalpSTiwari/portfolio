@@ -1,20 +1,21 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Server, GitBranch, Brain } from 'lucide-react';
 import './../styles.css';
 
 const pillars = [
   {
-    icon: '⚙️',
+    icon: <Server size={28} strokeWidth={1.75} />,
     title: 'Backend Engineering',
-    desc: 'Microservices, REST APIs, Spring Boot, FastAPI — building reliable services that scale.',
+    desc: 'Microservices, REST APIs, Spring Boot, FastAPI — building reliable services that hold up under real load.',
   },
   {
-    icon: '🔀',
+    icon: <GitBranch size={28} strokeWidth={1.75} />,
     title: 'Distributed Systems',
     desc: 'Kafka pipelines, Kubernetes clusters, high-throughput event processing at millions of events per day.',
   },
   {
-    icon: '🤖',
+    icon: <Brain size={28} strokeWidth={1.75} />,
     title: 'Applied AI',
     desc: 'LLM-powered platforms, RAG pipelines, agentic workflows, and structured-output generation.',
   },
@@ -28,15 +29,16 @@ const About = () => {
         <Row className='justify-content-center'>
           <Col md={9} className='text-center'>
             <p className='about-bio'>
-              I'm a Full Stack Software Engineer with 5+ years of experience building
-              backend systems, distributed infrastructure, and AI-powered applications.
-              My work spans high-throughput event streaming, microservices at scale, and
-              LLM-driven engineering platforms — across fintech, research, and enterprise domains.
+              I've spent the past 5 years building systems that handle real load — event pipelines
+              at Intercontinental Exchange, trading infrastructure at Goldman Sachs, and research
+              tooling at SJSU. I gravitate toward backend work: the part where a system either holds
+              up under pressure or it doesn't.
             </p>
             <p className='about-bio'>
-              I'm comfortable across the full stack — from designing Kafka pipelines and
-              Kubernetes deployments to shipping React frontends and integrating RAG-based AI
-              workflows. I care about systems that are reliable, observable, and built to last.
+              These days I spend a lot of time at the intersection of distributed systems and AI —
+              wiring LLMs into production pipelines, building RAG systems that actually stay
+              accurate, and figuring out how to make agentic workflows reliable enough to ship.
+              I'm comfortable from Kafka to React when the job calls for it.
             </p>
           </Col>
         </Row>

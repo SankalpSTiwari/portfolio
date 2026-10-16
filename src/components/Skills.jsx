@@ -1,80 +1,52 @@
 import React from 'react';
-import IMAGES from '../images';
-import './../styles.css'; // Import your styles
+import { Code2, Layers, Database, Cloud, Brain } from 'lucide-react';
+import './../styles.css';
+
+const skills = [
+  {
+    icon: <Code2 size={32} strokeWidth={1.5} />,
+    title: 'Languages',
+    items: ['Java', 'Python', 'Go', 'JavaScript', 'TypeScript', 'C++', 'SQL', 'Shell'],
+  },
+  {
+    icon: <Layers size={32} strokeWidth={1.5} />,
+    title: 'Frameworks & Web',
+    items: ['Spring Boot', 'FastAPI', 'Flask', 'Node.js', 'Express.js', 'React', 'Next.js', 'Redux', 'GraphQL', 'REST APIs'],
+  },
+  {
+    icon: <Database size={32} strokeWidth={1.5} />,
+    title: 'Distributed Systems & Data',
+    items: ['Kafka', 'Kubernetes', 'Docker', 'Redis', 'MongoDB', 'PostgreSQL', 'MySQL', 'Sybase'],
+  },
+  {
+    icon: <Cloud size={32} strokeWidth={1.5} />,
+    title: 'Cloud & DevOps',
+    items: ['AWS', 'GCP', 'Jenkins', 'GitLab CI/CD', 'SonarQube', 'Autosys', 'Git'],
+  },
+  {
+    icon: <Brain size={32} strokeWidth={1.5} />,
+    title: 'Applied AI',
+    items: ['LLM Applications', 'Agentic Workflows', 'RAG', 'Structured Outputs', 'LLM Evaluation', 'Prompt Engineering', 'Machine Learning'],
+  },
+];
 
 const Skills = () => {
   return (
     <section id='services'>
-      <div className='services container'>
-        <div>
-          <h1 className='section-title'>Skills</h1>
-        </div>
-        <div className='service-bottom'>
-          <div className='service-item'>
-            <div className='icon'>
-              <img
-                className='skill-card'
-                src={IMAGES.toolsServices}
-                alt='Applied AI Icon'
-              />
+      <div className='skills-container'>
+        <h1 className='section-title'>Skills</h1>
+        <div className='skills-grid'>
+          {skills.map((s) => (
+            <div key={s.title} className='skill-card-new'>
+              <div className='skill-card-icon'>{s.icon}</div>
+              <h2 className='skill-card-title'>{s.title}</h2>
+              <div className='skill-card-tags'>
+                {s.items.map((item) => (
+                  <span key={item} className='skill-tag'>{item}</span>
+                ))}
+              </div>
             </div>
-            <h2>Applied AI</h2>
-            <p>
-              LLM Applications, Agentic Workflows, RAG, Structured Outputs, LLM Evaluation, Prompt Engineering, Machine Learning
-            </p>
-          </div>
-          <div className='service-item'>
-            <div className='icon'>
-              <img
-                className='skill-card'
-                src={IMAGES.progLang}
-                alt='Programming Languages Icon'
-              />
-            </div>
-            <h2>Languages</h2>
-            <p>
-              Java, Python, Go, JavaScript, TypeScript, C++, SQL, Shell
-            </p>
-          </div>
-          <div className='service-item'>
-            <div className='icon'>
-              <img
-                className='skill-card'
-                src={IMAGES.frameworks}
-                alt='Frameworks Icon'
-              />
-            </div>
-            <h2>Frameworks & Web</h2>
-            <p>
-              Spring Boot, FastAPI, Flask, Node.js, Express.js, React, Next.js, Redux, GraphQL, REST APIs
-            </p>
-          </div>
-          <div className='service-item'>
-            <div className='icon'>
-              <img
-                className='skill-card'
-                src={IMAGES.webTech}
-                alt='Distributed Systems Icon'
-              />
-            </div>
-            <h2>Distributed Systems & Data</h2>
-            <p>
-              Kafka, Kubernetes, Docker, Redis, MongoDB, PostgreSQL, MySQL, Sybase, Stored Procedures
-            </p>
-          </div>
-          <div className='service-item'>
-            <div className='icon'>
-              <img
-                className='skill-card'
-                src={IMAGES.frameworks}
-                alt='Cloud Icon'
-              />
-            </div>
-            <h2>Cloud & DevOps</h2>
-            <p>
-              AWS, GCP, Jenkins, GitLab CI/CD, SonarQube, Autosys, Git
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

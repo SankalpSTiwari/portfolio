@@ -1,18 +1,16 @@
 import React from 'react';
-import { useTheme } from '../ThemeContext';
-import './../styles.css'; // Import your styles
+import { useTheme } from '../ThemeContext.jsx';
+import './../styles.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Button from 'react-bootstrap/Button';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
+
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
+
   const handleContactClick = () => {
-    const contactElement = document.getElementById('contact-form');
-    if (contactElement) {
-      contactElement.scrollIntoView({ behavior: 'smooth' });
-    }
+    const el = document.getElementById('contact-form');
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -32,14 +30,17 @@ const Header = () => {
             <Nav.Link href='#certifications'>Certifications</Nav.Link>
             <Nav.Link onClick={handleContactClick}>Contact</Nav.Link>
           </Nav>
-          <Button
-            variant='outline-primary'
+
+          {/* Pill toggle */}
+          <button
+            className={`theme-pill-toggle${theme === 'dark' ? ' is-dark' : ''}`}
             onClick={toggleTheme}
-            className='theme-toggle-btn'
             aria-label='Toggle theme'
           >
-            {theme === 'light' ? '🌙' : '☀️'}
-          </Button>
+            <span className='pill-sun'>☀️</span>
+            <span className='pill-thumb' />
+            <span className='pill-moon'>🌙</span>
+          </button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -1,162 +1,84 @@
 import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col } from 'react-bootstrap';
 import IMAGES from '../images';
-import './../styles.css'; // Import your styles
+import './../styles.css';
+
+const certs = [
+  {
+    title: 'Python for Everybody Specialization',
+    issued: 'Jun 2020',
+    credentialId: 'Y6ZMLEFJU9GC',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/Y6ZMLEFJU9GC',
+  },
+  {
+    title: 'Business Metrics for Data-Driven Companies',
+    issued: 'May 2020',
+    credentialId: 'F8NX9XADAGAQ',
+    link: 'https://www.coursera.org/account/accomplishments/certificate/F8NX9XADAGAQ',
+  },
+  {
+    title: 'Data Science Methodology',
+    issued: 'Mar 2020',
+    credentialId: 'AM49QJUDKKZW',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/AM49QJUDKKZW',
+  },
+  {
+    title: 'Open Source Tools for Data Science',
+    issued: 'Mar 2020',
+    credentialId: 'NSW7RZ2Y9QMW',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/NSW7RZ2Y9QMW',
+  },
+  {
+    title: 'What is Data Science?',
+    issued: 'Feb 2020',
+    credentialId: '4LWR8PFSBNCN',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/4LWR8PFSBNCN',
+  },
+  {
+    title: 'Machine Learning — Stanford',
+    issued: 'Aug 2019',
+    credentialId: 'EYZP7U9XDSQ5',
+    link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/EYZP7U9XDSQ5',
+  },
+];
+
 const Certifications = () => {
   return (
-    <Container id='certifications'>
-      <Row className='certification-title'>
+    <section id='certifications' className='cert-section'>
+      <Container>
         <h1 className='section-title'>Certifications</h1>
-      </Row>
-      <Row>
-        <Col className='mb-3 d-flex justify-content-center'>
-          <Card className='certification-card'>
-            <Card.Body>
-              <Card.Title>Python for Everybody Specialization</Card.Title>
-              <Card.Text className='cert-text'>
-                <div className='cert-provider'>
-                  <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
-                  <strong>Coursera</strong>
+        <Row className='justify-content-center g-4'>
+          {certs.map((c) => (
+            <Col key={c.credentialId} xs={12} sm={6} lg={4} className='d-flex'>
+              <div className='cert-card'>
+                <div className='cert-card-body'>
+                  <div className='cert-provider'>
+                    <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
+                    <span className='cert-provider-name'>Coursera</span>
+                  </div>
+                  <h3 className='cert-title'>{c.title}</h3>
+                  <p className='cert-meta'>
+                    Issued {c.issued}
+                    <br />
+                    <span className='cert-id'>ID: {c.credentialId}</span>
+                  </p>
                 </div>
-                Issued Jun 2020
-                <br /> Credential ID: Y6ZMLEFJU9GC
-              </Card.Text>
-              <Button
-                className='certification-card-button'
-                variant='primary'
-                href='https://www.coursera.org/account/accomplishments/specialization/certificate/Y6ZMLEFJU9GC'
-                target='_blank'
-              >
-                Show credential
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col className='mb-3 d-flex justify-content-center'>
-          <Card className='certification-card'>
-            <Card.Body>
-              <Card.Title>
-                Business Metrics for Data-Driven Companies
-              </Card.Title>
-              <Card.Text className='cert-text'>
-                <div className='cert-provider'>
-                  <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
-                  <strong>Coursera</strong>
+                <div className='cert-card-footer'>
+                  <a
+                    href={c.link}
+                    target='_blank'
+                    rel='noreferrer'
+                    className='cert-btn'
+                  >
+                    Show credential ↗
+                  </a>
                 </div>
-                Issued May 2020
-                <br /> Credential ID: F8NX9XADAGAQ
-              </Card.Text>
-              <Button
-                className='certification-card-button'
-                variant='primary'
-                href='https://www.coursera.org/account/accomplishments/certificate/F8NX9XADAGAQ'
-                target='_blank'
-              >
-                Show credential
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col className='mb-3 d-flex justify-content-center'>
-          <Card className='certification-card'>
-            <Card.Body>
-              <Card.Title>Data Science Methodology</Card.Title>
-              <Card.Text className='cert-text'>
-                <div className='cert-provider'>
-                  <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
-                  <strong>Coursera</strong>
-                </div>
-                Issued March 2020
-                <br /> Credential ID: AM49QJUDKKZW
-              </Card.Text>
-              <Button
-                className='certification-card-button'
-                variant='primary'
-                href='https://www.coursera.org/account/accomplishments/specialization/certificate/AM49QJUDKKZW'
-                target='_blank'
-              >
-                Show credential
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row>
-        <Col className='mb-3 d-flex justify-content-center'>
-          <Card className='certification-card'>
-            <Card.Body>
-              <Card.Title>Open Source tools for Data Science</Card.Title>
-              <Card.Text className='cert-text'>
-                <div className='cert-provider'>
-                  <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
-                  <strong>Coursera</strong>
-                </div>
-                Issued March 2020
-                <br /> Credential ID: NSW7RZ2Y9QMW
-              </Card.Text>
-              <Button
-                className='certification-card-button'
-                variant='primary'
-                href='https://www.coursera.org/account/accomplishments/specialization/certificate/NSW7RZ2Y9QMW'
-                target='_blank'
-              >
-                Show credential
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col className='mb-3 d-flex justify-content-center'>
-          <Card className='certification-card'>
-            <Card.Body>
-              <Card.Title>What is Data Science?</Card.Title>
-              <Card.Text className='cert-text'>
-                <div className='cert-provider'>
-                  <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
-                  <strong>Coursera</strong>
-                </div>
-                Issued Feb 2020
-                <br /> Credential ID: 4LWR8PFSBNCN
-              </Card.Text>
-              <Button
-                className='certification-card-button'
-                variant='primary'
-                href='https://www.coursera.org/account/accomplishments/specialization/certificate/4LWR8PFSBNCN'
-                target='_blank'
-              >
-                Show credential
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col className='mb-3 d-flex justify-content-center'>
-          <Card className='certification-card'>
-            <Card.Body>
-              <Card.Title>Machine Learning - Stanford</Card.Title>
-              <Card.Text className='cert-text'>
-                <div className='cert-provider'>
-                  <img src={IMAGES.coursera} alt='Coursera' className='cert-logo-badge' />
-                  <strong>Coursera</strong>
-                </div>
-                Issued Aug 2019
-                <br /> Credential ID: EYZP7U9XDSQ5
-              </Card.Text>
-              <Button
-                className='certification-card-button'
-                variant='primary'
-                href='https://www.coursera.org/account/accomplishments/specialization/certificate/EYZP7U9XDSQ5'
-                target='_blank'
-              >
-                Show credential
-              </Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
+              </div>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+    </section>
   );
 };
 
