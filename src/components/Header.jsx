@@ -9,18 +9,9 @@ import Button from 'react-bootstrap/Button';
 const Header = () => {
   const { theme, toggleTheme } = useTheme();
   const handleContactClick = () => {
-    // Scroll to the element with id 'contact'
-    const contactElement = document.getElementById('contact');
+    const contactElement = document.getElementById('contact-form');
     if (contactElement) {
       contactElement.scrollIntoView({ behavior: 'smooth' });
-
-      // Open the specified link in a new tab after scrolling
-      setTimeout(() => {
-        window.open(
-          'https://hihello.me/p/716715bb-8d16-4fd5-accc-1d1795ea34c0',
-          '_blank'
-        );
-      }, 2000); // Adjust the delay as needed
     }
   };
 
@@ -34,11 +25,12 @@ const Header = () => {
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className='me-auto'>
             <Nav.Link href='#home'>Home</Nav.Link>
+            <Nav.Link href='#about'>About</Nav.Link>
             <Nav.Link href='#services'>Skills</Nav.Link>
-            <Nav.Link href='#experience'>About</Nav.Link>
+            <Nav.Link href='#experience'>Experience</Nav.Link>
             <Nav.Link href='#projects'>Projects</Nav.Link>
             <Nav.Link href='#certifications'>Certifications</Nav.Link>
-            <Nav.Link onClick={handleContactClick}>Contact Me</Nav.Link>
+            <Nav.Link onClick={handleContactClick}>Contact</Nav.Link>
           </Nav>
           <Button
             variant='outline-primary'

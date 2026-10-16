@@ -4,11 +4,12 @@ import { ThemeProvider } from "./ThemeContext";
 // Components
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import About from "./components/About";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
 import Experiences from "./components/Experiences";
-// ...existing code...
+import Projects from "./components/Projects";
 import Certifications from "./components/Certifications";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 const App = () => {
@@ -17,10 +18,12 @@ const App = () => {
             <div>
                 <Header />
                 <Hero />
+                <About />
                 <Skills />
                 <Experiences />
                 <Projects />
                 <Certifications />
+                <Contact />
                 <Footer />
             </div>
         </ThemeProvider>

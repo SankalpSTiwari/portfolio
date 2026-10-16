@@ -4,19 +4,47 @@ import Button from 'react-bootstrap/Button';
 
 const Projects = () => {
   return (
-    // Projects Section
     <section id='projects'>
       <div className='projects container'>
         <div className='projects-header'>
           <h1 className='section-title'>Projects</h1>
         </div>
         <div className='all-projects'>
+
+          {/* === Strong / Featured Projects === */}
+
+          <div className='project-item'>
+            <div className='project-info container'>
+              <h1>Moodify</h1>
+              <br />
+              <p>
+                Mood-based music and movie recommendation app using ML (Random
+                Forest) and cosine similarity for content filtering.
+                <br />
+                <br />
+                <b>Tools used:</b> React, Node.js, Flask, AWS, Spotify API, TMDB, Machine Learning
+              </p>
+              <Button
+                variant='light'
+                href='https://github.com/SankalpSTiwari/Moodify'
+                target='_blank'
+              >
+                GitHub
+              </Button>
+            </div>
+            <div className='project-img moodify-placeholder'>
+              <div className='project-img-placeholder'>
+                <span className='placeholder-icon'>🎵</span>
+                <span className='placeholder-label'>ML · Recommendations</span>
+              </div>
+            </div>
+          </div>
+
           <div className='project-item'>
             <div className='project-info container'>
               <h1>Back2Office</h1>
               <br />
               <p>
-                {' '}
                 End-to-end scalable Office Space booking application.
                 <br />
                 <br />
@@ -42,12 +70,96 @@ const Projects = () => {
 
           <div className='project-item'>
             <div className='project-info'>
+              <h1>SmartTrip</h1>
+              <br />
+              <p>
+                Scalable travel planning application leveraging OpenAI's GPT-3.5
+                APIs to generate personalized itineraries.
+                <br />
+                <br />
+                <b>Tools used:</b> React.js, MongoDB, Node.js, Express.js, JWT,
+                Redux
+              </p>
+              <Button
+                variant='light'
+                href='https://github.com/SankalpSTiwari/SmartTrip'
+                target='_blank'
+              >
+                GitHub
+              </Button>
+            </div>
+            <div className='project-img'>
+              <img
+                src={IMAGES.project_smarttrip}
+                alt='img'
+                style={{ width: '91%', height: '91%' }}
+              />
+            </div>
+          </div>
+
+          <div className='project-item'>
+            <div className='project-info'>
+              <h1>GPTalk</h1>
+              <br />
+              <p>
+                Android application harnessing OpenAI's GPT model for a smart
+                conversational companion.
+                <br />
+                <br />
+                <b>Tools used:</b> Kotlin, Android, OpenAI API, Jetpack Compose
+              </p>
+              <Button
+                variant='light'
+                href='https://github.com/SankalpSTiwari/GPTalk'
+                target='_blank'
+              >
+                GitHub
+              </Button>
+            </div>
+            <div className='project-img'>
+              <img
+                src={IMAGES.project_gptalk}
+                alt='img'
+                style={{ width: '35%', height: '91%' }}
+              />
+            </div>
+          </div>
+
+          <div className='project-item'>
+            <div className='project-info'>
+              <h1>Auditor Enterprise Chat</h1>
+              <br />
+              <p>
+                Web application to streamline the auditing process for
+                commercial companies using OpenAI's GPT model.
+                <br />
+                <br />
+                <b>Tools used:</b> HTML, CSS, OpenAI API
+              </p>
+              <Button
+                variant='light'
+                href='https://github.com/SankalpSTiwari/Auditor-Enterprise-Chat-UI'
+                target='_blank'
+              >
+                GitHub
+              </Button>
+            </div>
+            <div className='project-img'>
+              <img
+                src={IMAGES.project_auditor}
+                alt='img'
+                style={{ width: '100%', height: '100%' }}
+              />
+            </div>
+          </div>
+
+          <div className='project-item'>
+            <div className='project-info'>
               <h1>Recipize</h1>
               <br />
               <p>
-                {' '}
-                A user-friendly mobile application built to offer personalized
-                recipe suggestions based on scanned ingredients.
+                Mobile application offering personalized recipe suggestions
+                based on scanned ingredients.
                 <br />
                 <br />
                 <b>Tools used:</b> Dart, TensorFlow, Image Detection, APIs
@@ -74,9 +186,9 @@ const Projects = () => {
               <h1>Microblog</h1>
               <br />
               <p>
-                {' '}
                 Scalable full-stack web application modeled after a popular
-                blogging platform. <br />
+                blogging platform.
+                <br />
                 <br />
                 <b>Tools used:</b> ReactJS, Express.js, Node.js, MongoDB, Redux,
                 MaterialUI
@@ -98,42 +210,13 @@ const Projects = () => {
             </div>
           </div>
 
-          <div className='project-item'>
-            <div className='project-info'>
-              <h1>SmartTrip</h1>
-              <br />
-              <p>
-                {' '}
-                A scalable travel planning application, leveraging OpenAI’s
-                GPT-3.5 APIs to generate personalized itineraries.
-                <br />
-                <br />
-                <b>Tools used:</b> React.js, MongoDB, Node.js, Express.js, JWT,
-                Redux
-              </p>
-              <Button
-                variant='light'
-                href='https://github.com/SankalpSTiwari/SmartTrip'
-                target='_blank'
-              >
-                GitHub
-              </Button>
-            </div>
-            <div className='project-img'>
-              <img
-                src={IMAGES.project_smarttrip}
-                alt='img'
-                style={{ width: '91%', height: '91%' }}
-              />
-            </div>
-          </div>
+          {/* === Additional Projects === */}
 
           <div className='project-item'>
             <div className='project-info'>
               <h1>meme-generator-app</h1>
               <br />
               <p>
-                {' '}
                 Web application to create your own customized memes.
                 <br />
                 <br />
@@ -161,10 +244,10 @@ const Projects = () => {
               <h1>weather-forecast-app</h1>
               <br />
               <p>
-                {' '}
-                Web application built using react to display and forecast
+                Web application built using React to display and forecast
                 weather of any location.
-                <br /> <br />
+                <br />
+                <br />
                 <b>Tools used:</b> React.js, Node.js, Express.js, REST APIs
               </p>
               <Button
@@ -186,67 +269,13 @@ const Projects = () => {
 
           <div className='project-item'>
             <div className='project-info'>
-              <h1>GPTalk</h1>
-              <br />
-              <p>
-                Android application that harnesses the power of OpenAI's GPT
-                model to provide you with a smart conversational companion.
-                <br /> <br />
-                <b>Tools used:</b> Kotlin, Android, OpenAI API Integrations,
-                Jetpack Compose
-              </p>
-              <Button
-                variant='light'
-                href='https://github.com/SankalpSTiwari/GPTalk'
-                target='_blank'
-              >
-                GitHub
-              </Button>
-            </div>
-            <div className='project-img'>
-              <img
-                src={IMAGES.project_gptalk}
-                alt='img'
-                style={{ width: '35%', height: '91%' }}
-              />
-            </div>
-          </div>
-          <div className='project-item'>
-            <div className='project-info'>
-              {/* <!-- <h1>Realtime Corona Virus Outbreak Notification System</h1>--> */}
-              <h1>Auditor-Enterprise-Chat-UI</h1>
-              <br />
-              <p>
-                A Web Application to streamline the auditing process for
-                commercial companies and individuals using OpenAI's GPT model.
-                <br /> <br />
-                <b>Tools Used:</b> HTML, CSS, OpenAI API Integrations
-              </p>
-              <Button
-                variant='light'
-                href='https://github.com/SankalpSTiwari/Auditor-Enterprise-Chat-UI'
-                target='_blank'
-              >
-                GitHub
-              </Button>
-            </div>
-            <div className='project-img'>
-              <img
-                src={IMAGES.project_auditor}
-                alt='img'
-                style={{ width: '100%', height: '100%' }}
-              />
-            </div>
-          </div>
-          <div className='project-item'>
-            <div className='project-info'>
               <h1>bookstore-app</h1>
               <br />
-              {/* <!--<h2>Coding is Love</h2>--> */}
               <p>
-                A web application developed using React to list and organize
-                books, featuring user authentication.
-                <br /> <br />
+                Web application to list and organize books, featuring user
+                authentication.
+                <br />
+                <br />
                 <b>Tools used:</b> React.js, Node.js, Express.js, Firebase,
                 Firestore Database
               </p>
@@ -266,14 +295,15 @@ const Projects = () => {
               />
             </div>
           </div>
+
           <div className='project-item'>
             <div className='project-info'>
               <h1>DevConnector</h1>
-              {/* <!--<h2>Coding is Love</h2>--> */}
               <p>
-                A social media application for connecting developers around the
+                Social media application for connecting developers around the
                 globe.
-                <br /> <br />
+                <br />
+                <br />
                 <b>Tools used:</b> React.js, Node.js, Express.js
               </p>
               <Button
@@ -292,17 +322,15 @@ const Projects = () => {
               />
             </div>
           </div>
+
           <div className='project-item'>
             <div className='project-info'>
               <h1>TicTacToe</h1>
-              {/* <!--<h2>Coding is Love</h2>--> */}
               <p>
-                Classic TicTacToe game brought to life with JavaScript!
+                Classic TicTacToe game brought to life with JavaScript.
                 <br />
-                Used data mining concepts like missing value handling,
-                Normalization, discretization while exploring data.
                 <br />
-                <br /> <b>Tool Used:</b> React.js, Node.js, Express.js{' '}
+                <b>Tools used:</b> React.js, Node.js, Express.js
               </p>
               <Button
                 variant='light'
@@ -320,18 +348,16 @@ const Projects = () => {
               />
             </div>
           </div>
+
           <div className='project-item'>
             <div className='project-info'>
               <h1>Space-Invaders-2.0</h1>
-              {/* <!--<h2>Coding is Love</h2>--> */}
               <p>
-                Classic Space Invaders game with a twist! Implemented custom
-                features to the game implementing various System Design patterns
-                following Agile methodology
+                Classic Space Invaders game with custom features implementing
+                various System Design patterns.
                 <br />
                 <br />
-                <b>Tools Used :</b> Java, System Design Patterns, Agile, UML
-                Diagrams, Wireframes, Architectures <br />
+                <b>Tools used:</b> Java, System Design Patterns, Agile, UML
               </p>
               <Button
                 variant='light'
@@ -349,10 +375,10 @@ const Projects = () => {
               />
             </div>
           </div>
+
         </div>
       </div>
     </section>
-    // <!-- End Projects Section -->
   );
 };
 

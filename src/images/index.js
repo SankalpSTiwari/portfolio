@@ -1,34 +1,63 @@
+import bg from './bg.png';
+import degree from './degree.png';
+import developer2 from './developer2.png';
+import rcoemLogo from './RcoemLogo.png';
+import goldmanSachsLogo from './GoldmanSachsLogo.png';
+import stetigLogo from './StetigLogo.png';
+import sjsuLogo from './SjsuLogo.png';
+import sjsuLogo2 from './SjsuLogo2.png';
+import sankalpProfile from './SankalpProfile.png';
+import sankalpProfile2 from './SankalpProfile2.jpg';
+import qrcode from './qrcode.png';
+import coursera from './coursera_logo.png';
+import progLang from './programming_languages.png';
+import webTech from './web_technologies.png';
+import frameworks from './frameworks.png';
+import toolsServices from './tools_services.png';
+import skillCardBg from './skill_card_bg.gif';
+import project_auditor from './project_auditor-enterprise-chat-ui.png';
+import project_back2office from './project_back2office.png';
+import project_bookstore from './project_bookstore-app.png';
+import project_devconnector from './project_devconnector.png';
+import project_gptalk from './project_gptalk.png';
+import project_meme from './project_meme-generator-app.png';
+import project_microblog from './project_microblog.png';
+import project_recipize from './project_recipize.png';
+import project_smarttrip from './project_smarttrip.png';
+import project_space from './project_space_invaders2.png';
+import project_tictactoe from './project_tictactoe.png';
+import project_weather from './project_weather-forecast-app.png';
+
 const IMAGES = {
-    bg: require("./bg.png"),
-    degree: require("./degree.png"),
-    developer2: require("./developer2.png"),
-    rcoemLogo: require("./RcoemLogo.png"),
-    goldmanSachsLogo: require("./GoldmanSachsLogo.png"),
-    stetigLogo: require("./StetigLogo.png"),
-    sjsuLogo: require("./SjsuLogo.png"),
-    sjsuLogo2: require("./SjsuLogo2.png"),
-    sankalpProfile: require("./SankalpProfile.png"),
-    sankalpProfile2: require("./SankalpProfile2.jpg"),
-    resume: require("./Sankalp_Resume.pdf"),
-    qrcode: require("./qrcode.png"),
-    coursera: require("./coursera_logo.png"),
-    progLang: require("./programming_languages.png"),
-    webTech: require("./web_technologies.png"),
-    frameworks: require("./frameworks.png"),
-    toolsServices: require("./tools_services.png"),
-    skillCardBg: require("./skill_card_bg.gif"),
-    project_auditor: require("./project_auditor-enterprise-chat-ui.png"),
-    project_back2office: require("./project_back2office.png"),
-    project_bookstore: require("./project_bookstore-app.png"),
-    project_devconnector: require("./project_devconnector.png"),
-    project_gptalk: require("./project_gptalk.png"),
-    project_meme: require("./project_meme-generator-app.png"),
-    project_microblog: require("./project_microblog.png"),
-    project_recipize: require("./project_recipize.png"),
-    project_smarttrip: require("./project_smarttrip.png"),
-    project_space: require("./project_space_invaders2.png"),
-    project_tictactoe: require("./project_tictactoe.png"),
-    project_weather: require("./project_weather-forecast-app.png"),
+  bg,
+  degree,
+  developer2,
+  rcoemLogo,
+  goldmanSachsLogo,
+  stetigLogo,
+  sjsuLogo,
+  sjsuLogo2,
+  sankalpProfile,
+  sankalpProfile2,
+  qrcode,
+  coursera,
+  progLang,
+  webTech,
+  frameworks,
+  toolsServices,
+  skillCardBg,
+  project_auditor,
+  project_back2office,
+  project_bookstore,
+  project_devconnector,
+  project_gptalk,
+  project_meme,
+  project_microblog,
+  project_recipize,
+  project_smarttrip,
+  project_space,
+  project_tictactoe,
+  project_weather,
 };
 
 export default IMAGES;
