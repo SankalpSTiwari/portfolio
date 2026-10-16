@@ -7,17 +7,17 @@ const pillars = [
   {
     icon: <Server size={28} strokeWidth={1.75} />,
     title: 'Backend Engineering',
-    desc: 'Microservices, REST APIs, Spring Boot, FastAPI — building reliable services that hold up under real load.',
+    desc: 'Spring Boot, FastAPI, Python, Java — I default to backend. Most of my career has been services that process high volumes and can\'t go down.',
   },
   {
     icon: <GitBranch size={28} strokeWidth={1.75} />,
     title: 'Distributed Systems',
-    desc: 'Kafka pipelines, Kubernetes clusters, high-throughput event processing at millions of events per day.',
+    desc: 'Kafka, Kubernetes, Redis. I\'ve built pipelines that move millions of events a day and had to debug them when something upstream goes sideways.',
   },
   {
     icon: <Brain size={28} strokeWidth={1.75} />,
     title: 'Applied AI',
-    desc: 'LLM-powered platforms, RAG pipelines, agentic workflows, and structured-output generation.',
+    desc: 'Not demo AI — production AI. RAG pipelines that stay accurate, agentic workflows that are reliable enough to actually depend on, structured outputs at scale.',
   },
 ];
 
@@ -29,16 +29,18 @@ const About = () => {
         <Row className='justify-content-center'>
           <Col md={9} className='text-center'>
             <p className='about-bio'>
-              I've spent the past 5 years building systems that handle real load — event pipelines
-              at Intercontinental Exchange, trading infrastructure at Goldman Sachs, and research
-              tooling at SJSU. I gravitate toward backend work: the part where a system either holds
-              up under pressure or it doesn't.
+              Started my career writing Java microservices at a consulting firm in Pune,
+              then came to the US for a master's at SJSU. Since then I've worked at Goldman
+              Sachs and Intercontinental Exchange — mostly backend, mostly under real load.
+              Goldman was trading infrastructure: Kafka pipelines, Kubernetes, the kind of
+              system where a bug at 3pm costs someone actual money.
             </p>
             <p className='about-bio'>
-              These days I spend a lot of time at the intersection of distributed systems and AI —
-              wiring LLMs into production pipelines, building RAG systems that actually stay
-              accurate, and figuring out how to make agentic workflows reliable enough to ship.
-              I'm comfortable from Kafka to React when the job calls for it.
+              ICE has been more AI-focused — RAG pipelines, agentic workflows, trying to
+              make LLM systems reliable enough to depend on in a production financial context.
+              That problem is harder than most demos suggest, which is what makes it worth
+              working on. I'll pick up React or whatever else the job needs, but backend is
+              where I default.
             </p>
           </Col>
         </Row>
