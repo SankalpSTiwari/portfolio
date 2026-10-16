@@ -59,11 +59,9 @@ const Footer = () => {
                             <a
                                 className='text-decoration-none'
                                 style={{ cursor: "pointer", color: "inherit" }}
-                                href='https://www.linkedin.com/in/tsankalp/'
-                                target='_blank'
-                                rel='noreferrer'
+                                href='#skills'
                             >
-                                Services
+                                Skills
                             </a>
                         </li>
                     </ul>
@@ -114,7 +112,7 @@ const Footer = () => {
                     className='text-center'
                     style={{ cursor: "default", paddingBottom: "1vh" }}
                 >
-                    Copyright &#169; work.sankalptiwari@gmail.com |{" "}
+                    Copyright &#169; Sankalp Tiwari |{" "}
                     {currentYear}
                 </Col>
             </Row>

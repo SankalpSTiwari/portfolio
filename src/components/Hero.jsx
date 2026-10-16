@@ -24,7 +24,8 @@ const Hero = () => {
   };
 
   return (
-    <Container id='home' className='hero-container'>
+    <section id='home' className='hero-section'>
+    <Container className='hero-container'>
       <Row>
         <Col className='hero-left' md={6}>
           <h1>
@@ -77,7 +78,7 @@ const Hero = () => {
               variant='dark'
               onClick={openGithubLink}
             >
-              Visit Github
+              Visit GitHub
             </Button>
           </div>
         </Col>
@@ -92,6 +93,7 @@ const Hero = () => {
         </Col>
       </Row>
     </Container>
+    </section>
   );
 };
 

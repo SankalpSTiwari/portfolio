@@ -227,6 +227,12 @@ p {
 
   /* Hero */
 
+  .hero-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
   .text-purple{
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     -webkit-background-clip: text;
@@ -310,8 +316,8 @@ p {
   /* Desktop Mode */
   @media only screen and (min-width: 768px) {
     .hero-container {
-      margin-bottom: 22vh;
-      margin-top: 37vh;
+      margin-bottom: 0;
+      margin-top: 0;
     }
   }
 
@@ -331,9 +337,11 @@ p {
 /* Last two cards centred on their row */
 .skills-grid > .skill-card-new:nth-child(4) {
   grid-column: 1 / 2;
+  justify-self: end;
 }
 .skills-grid > .skill-card-new:nth-child(5) {
-  grid-column: 3 / 4;
+  grid-column: 2 / 3;
+  justify-self: start;
 }
 @media (max-width: 991px) {
   .skills-grid {
@@ -742,6 +750,7 @@ p {
   line-height: 1.9;
   color: var(--text-secondary) !important;
   margin-bottom: 1.2rem;
+  text-align: left;
 }
 .about-pillar {
   background: var(--card-bg);
