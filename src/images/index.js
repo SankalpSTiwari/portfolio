@@ -2,7 +2,8 @@ import bg from './bg.png';
 import degree from './degree.png';
 import developer2 from './developer2.png';
 import rcoemLogo from './RcoemLogo.png';
-import goldmanSachsLogo from './GoldmanSachsLogo.png';
+import goldmanSachsLogo from './GoldmanSachsLogo_wide.png';
+import iceLogo from './ICELogo.png';
 import stetigLogo from './StetigLogo.png';
 import sjsuLogo from './SjsuLogo.png';
 import sjsuLogo2 from './SjsuLogo2.png';
@@ -34,6 +35,7 @@ const IMAGES = {
   developer2,
   rcoemLogo,
   goldmanSachsLogo,
+  iceLogo,
   stetigLogo,
   sjsuLogo,
   sjsuLogo2,

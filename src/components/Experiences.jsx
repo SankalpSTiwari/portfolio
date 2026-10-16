@@ -5,7 +5,7 @@ import { Container, Carousel } from "react-bootstrap";
 
 const experiences = [
   {
-    logo: null,
+    logo: IMAGES.iceLogo,
     initials: "ICE",
     title: "Software Engineer",
     period: "Feb 2026 – Present",
